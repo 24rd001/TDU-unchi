@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tukunedashhanten-export_0: -8763645440175463636
+      tukunedashhanten-export_1: 4338934303945169538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

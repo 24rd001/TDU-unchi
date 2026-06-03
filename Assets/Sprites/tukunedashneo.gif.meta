@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tukunedashneo_0: -4010136778609684528
+      tukunedashneo_1: 5491326504839696466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
