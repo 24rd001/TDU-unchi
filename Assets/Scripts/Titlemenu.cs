@@ -21,6 +21,6 @@ public class TitleMenu : MonoBehaviour
 
     public void StartGame()   => SceneManager.LoadScene("CharacterSelect");
     public void OpenOptions() { Debug.Log("オプション"); /* SceneManager.LoadScene("Options"); */ }
-    public void OpenZukan()   { Debug.Log("うんち図鑑"); /* SceneManager.LoadScene("Zukan"); */ }
+    public void OpenZukan() => SceneManager.LoadScene("Zukan");
     public void QuitGame()    => Application.Quit();
 }
