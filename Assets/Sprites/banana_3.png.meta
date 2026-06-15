@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 46023df426f812140a24da6df1796b1e
+guid: b9a05f2bb11c2344cb9a3c25df4a545f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4010136778609684528
-    second: tukunedashneo_0
+      213: -6917564902639398667
+    second: banana_3_0
   - first:
-      213: 5491326504839696466
-    second: tukunedashneo_1
+      213: -5536431064461936377
+    second: banana_3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -78,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tukunedashneo_0
+      name: banana_3_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 10
-        width: 18
-        height: 11
+        x: 8
+        y: 5
+        width: 9
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0df8d32b8d12958c0800000000000000
-      internalID: -4010136778609684528
+      spriteID: 5f018733f5fdfff90800000000000000
+      internalID: -6917564902639398667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tukunedashneo_1
+      name: banana_3_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 49
-        height: 40
+        x: 13
+        y: 2
+        width: 40
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25058a2ac5c153c40800000000000000
-      internalID: 5491326504839696466
+      spriteID: 709fe47b745aa23b0800000000000000
+      internalID: -5536431064461936377
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tukunedashneo_0: -4010136778609684528
-      tukunedashneo_1: 5491326504839696466
+      banana_3_0: -6917564902639398667
+      banana_3_1: -5536431064461936377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

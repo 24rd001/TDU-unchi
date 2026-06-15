@@ -2936,6 +2936,7 @@ GameObject:
   - component: {fileID: 2134971196}
   - component: {fileID: 2134971199}
   - component: {fileID: 2134971201}
+  - component: {fileID: 2134971202}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -3022,7 +3023,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2134971198
@@ -3094,6 +3095,37 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.015446822, y: 0.038464904}
   m_Radius: 0.22983293
+--- !u!114 &2134971202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134971194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3563444116505f543a6e977267903764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - name: banana
+    frames:
+    - {fileID: -6326676321984005046, guid: 48791ed6363c7e546b6d39330f4bfb19, type: 3}
+    - {fileID: 214751303787918923, guid: 9332231ef90f9da409b69ec01dd637b2, type: 3}
+    - {fileID: -51368837527486339, guid: f5c1ce17899f1a24d9857bc5a0dac73c, type: 3}
+    - {fileID: -5536431064461936377, guid: b9a05f2bb11c2344cb9a3c25df4a545f, type: 3}
+    - {fileID: -3192714025824923799, guid: 3bb013e90d4ab5b448e01dc1c5a4a267, type: 3}
+  - name: samon
+    frames:
+    - {fileID: -7547502297024975132, guid: 0f352ece05e230749aa5afaa170e3466, type: 3}
+    - {fileID: -7447309558702923991, guid: 78b1420cb1a3cea478a87cf997d0721f, type: 3}
+    - {fileID: -5002801170467669080, guid: a84c56b07699dd842b15d268e2f500e0, type: 3}
+  - name: tukune
+    frames:
+    - {fileID: -2740476072209198967, guid: f836a1aba5e4f704f8f686abab35ea20, type: 3}
+    - {fileID: -4147829305759195889, guid: 4419e809335c2954296ea9a61cfdef8d, type: 3}
+    - {fileID: -3192642338894388366, guid: ea4de0b89fce50e4695898f2a10b07c3, type: 3}
+  fps: 12
 --- !u!1001 &754995704900164618
 PrefabInstance:
   m_ObjectHideFlags: 0

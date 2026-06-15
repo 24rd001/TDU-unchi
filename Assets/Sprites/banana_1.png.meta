@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db362ffeb879a6b488cb2e8de83952fa
+guid: 9332231ef90f9da409b69ec01dd637b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7658631450909852594
-    second: samondash_0
+      213: 214751303787918923
+    second: banana_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: samondash_0
+      name: banana_1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 52
-        height: 62
+        x: 11
+        y: 4
+        width: 42
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b3cd193abce84a60800000000000000
-      internalID: 7658631450909852594
+      spriteID: b46b4594c23faf200800000000000000
+      internalID: 214751303787918923
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      banana_1_0: 214751303787918923
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
