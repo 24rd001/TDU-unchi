@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bananadash_0: -772455912667392540
+      bananadash_1: 2103487796315918320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
