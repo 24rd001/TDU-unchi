@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9bcf2c30ac6c0404b9141e612f8f57cb
+guid: b9b4dc47085c8734bb5aadf899c4ab57
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3726702546821719212
-    second: kobone2_0_0
+      213: 1083268142008930348
+    second: yaeba_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kobone2_0_0
+      name: yaeba_0_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 27
-        width: 118
-        height: 62
+        x: 0
+        y: 0
+        width: 64
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45bd52157c7184cc0800000000000000
-      internalID: -3726702546821719212
+      spriteID: c2090f0c2aa880f00800000000000000
+      internalID: 1083268142008930348
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      kobone2_0_0: -3726702546821719212
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
