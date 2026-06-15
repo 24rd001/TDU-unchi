@@ -3,14 +3,12 @@ using UnityEngine;
 public class MbornTrap : MonoBehaviour
 {
     public Transform player;
-
-    public float detectDistance = 3f; // 発動距離
-    public float moveDistance = 2f;   // 飛び出す距離
-    public float speed = 15f;         // 飛び出す速さ
+    public float detectDistance = 4f;
+    public float moveDistance = 3f;
+    public float speed = 40f;
 
     private Vector3 startPos;
     private Vector3 attackPos;
-
     private bool activated = false;
 
     void Start()
@@ -34,6 +32,12 @@ public class MbornTrap : MonoBehaviour
                 attackPos,
                 speed * Time.deltaTime
             );
+
+            // 到着したら停止
+            if (Vector3.Distance(transform.position, attackPos) < 0.01f)
+            {
+                activated = false;
+            }
         }
     }
 }
