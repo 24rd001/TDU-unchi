@@ -27,7 +27,7 @@ public class CharacterSelect : MonoBehaviour
     {
         GameData.SelectedCharacter = index;
         Debug.Log("決定：" + index);
-        // SceneManager.LoadScene("GameScene"); // GameSceneを作ったら有効化
+        SceneManager.LoadScene("MouseScene"); // GameSceneを作ったら有効化
     }
 
     public void Back() => SceneManager.LoadScene("TitleScene"); // ★もどる→タイトル
