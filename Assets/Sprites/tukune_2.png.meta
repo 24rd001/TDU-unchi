@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d9a15be3f2fc7a846a21a4153e4c2aac
+guid: ea4de0b89fce50e4695898f2a10b07c3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9182177788924653191
-    second: banana_0
+      213: -3192642338894388366
+    second: tukune_2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: banana_0
+      name: tukune_2_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 5
-        width: 40
-        height: 53
+        x: 0
+        y: 8
+        width: 54
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9711aa243f9529080800000000000000
-      internalID: -9182177788924653191
+      spriteID: 273e35745b471b3d0800000000000000
+      internalID: -3192642338894388366
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      banana_0: -9182177788924653191
+      tukune_2_0: -3192642338894388366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
