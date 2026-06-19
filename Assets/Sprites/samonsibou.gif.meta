@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2009976ff58818d4a964d2ef80b719cb
+guid: ff25ef5bf69a6d449985b9e1e3ca4fd9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7349495185588576521
-    second: tukunesibou_0
+      213: 3772627919182740204
+    second: samonsibou_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tukunesibou_0
+      name: samonsibou_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 9
-        width: 42
-        height: 40
+        x: 19
+        y: 12
+        width: 59
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90163779ee6aef560800000000000000
-      internalID: 7349495185588576521
+      spriteID: ceabb90ba111b5430800000000000000
+      internalID: 3772627919182740204
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      tukunesibou_0: 7349495185588576521
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
