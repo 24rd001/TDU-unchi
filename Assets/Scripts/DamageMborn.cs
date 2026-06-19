@@ -6,7 +6,7 @@ public class DamageMborn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Mborn"))
+        if (other.CompareTag("Player"))
         {
             LifeManager.Instance.Damage(damage);
         }

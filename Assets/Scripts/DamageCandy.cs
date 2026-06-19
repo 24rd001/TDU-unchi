@@ -6,7 +6,7 @@ public class DamageCandy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Candy"))
+        if (other.CompareTag("Player"))
         {
             LifeManager.Instance.Damage(damage);
         }

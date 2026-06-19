@@ -27,7 +27,11 @@ public class LifeManager : MonoBehaviour
         if (currentLife <= 0)
         {
             currentLife = 0;
+            // この行を実行した瞬間に、Unityエディタが一時停止（Pause）します
+            Debug.Break();
+
             SceneManager.LoadScene("GameOver");
+            
         }
     }
 
