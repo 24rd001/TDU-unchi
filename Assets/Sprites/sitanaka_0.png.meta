@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 626e7584b39ca3d4295b681798e67d41
+guid: c895b41690fbe2245b321d5afaf0d35d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4896746442432959477
-    second: sita_0
+      213: 3739171123411151423
+    second: sitanaka_0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sita_0
+      name: sitanaka_0_0
       rect:
         serializedVersion: 2
-        x: 17
+        x: 394
         y: 0
-        width: 223
-        height: 93
-      alignment: 9
-      pivot: {x: 1, y: 0.5}
+        width: 325
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f3df5002fcb4f340800000000000000
-      internalID: 4896746442432959477
+      spriteID: f3ae155635434e330800000000000000
+      internalID: 3739171123411151423
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db9a03e96fb8896479489218ac91ef3d
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      sita_0: 4896746442432959477
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

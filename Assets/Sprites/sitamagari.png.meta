@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 626e7584b39ca3d4295b681798e67d41
+guid: 04fc4ec20e584764592198288df98989
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4896746442432959477
-    second: sita_0
+      213: -2900989189955305567
+    second: sitamagari_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sita_0
+      name: sitamagari_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 223
-        height: 93
+        x: 4
+        y: 34
+        width: 518
+        height: 398
       alignment: 9
       pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f3df5002fcb4f340800000000000000
-      internalID: 4896746442432959477
+      spriteID: 1af377ba3bd9db7d0800000000000000
+      internalID: -2900989189955305567
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: db9a03e96fb8896479489218ac91ef3d
+    spriteID: 0ed0d1d24123b00458638f72073792eb
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sita_0: 4896746442432959477
+      sitamagari_0: -2900989189955305567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

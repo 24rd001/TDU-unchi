@@ -1,35 +1,38 @@
 using UnityEngine;
 
-public class TongueStretchFromBase : MonoBehaviour
+public class Tonguestretch : MonoBehaviour
 {
-    public float minLength = 1f;
-    public float maxLength = 4f;
+    [Header("Stretch")]
+    public float minScaleMultiplier = 1.0f;
+    public float maxScaleMultiplier = 2.0f;
     public float speed = 2f;
 
     private Vector3 startScale;
-    private Vector3 startLocalPosition;
+    private Vector3 startPosition;
 
     void Start()
     {
         startScale = transform.localScale;
-        startLocalPosition = transform.localPosition;
+        startPosition = transform.position;
     }
 
     void Update()
     {
         float t = (Mathf.Sin(Time.time * speed) + 1f) / 2f;
-        float length = Mathf.Lerp(minLength, maxLength, t);
+
+        float scaleX = Mathf.Lerp(
+            startScale.x * minScaleMultiplier,
+            startScale.x * maxScaleMultiplier,
+            t
+        );
 
         transform.localScale = new Vector3(
-            length,
+            scaleX,
             startScale.y,
             startScale.z
         );
 
-        transform.localPosition = new Vector3(
-            startLocalPosition.x + (length - minLength) / 2f,
-            startLocalPosition.y,
-            startLocalPosition.z
-        );
+        // ˆÊ’u‚ÍŒÅ’è
+        transform.position = startPosition;
     }
 }
