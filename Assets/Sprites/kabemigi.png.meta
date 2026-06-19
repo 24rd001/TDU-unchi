@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kabemigi_0: 3669273822785165181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
