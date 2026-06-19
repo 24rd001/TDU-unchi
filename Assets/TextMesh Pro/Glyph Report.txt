@@ -1,0 +1,13 @@
+Font: DotGothic16  Style: Regular
+Point Size: 36   Padding: -9897504   SP/PD Ratio: -27493070.0%
+
+Characters included: 54/55
+Missing characters: 1
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+ID: 9	Hex: 9	Char [	]
+
+Characters excluded from packing:
+----------------------------------------
