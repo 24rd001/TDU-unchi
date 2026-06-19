@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,13 @@ public class LifeManager : MonoBehaviour
 
     public int maxLife = 3;
     public int currentLife = 1;
+
+    
+    public string respawnSceneName = "MouseScene";
+    public float respawnDelay = 2f;
+
+    private int initiallife = 1;
+    private bool isDead = false;
 
     void Awake()
     {
@@ -22,17 +30,25 @@ public class LifeManager : MonoBehaviour
 
     public void Damage(int amount)
     {
+        if(isDead) return;
         currentLife -= amount;
 
         if (currentLife <= 0)
         {
             currentLife = 0;
-            // この行を実行した瞬間に、Unityエディタが一時停止（Pause）します
-            Debug.Break();
-
-            SceneManager.LoadScene("GameOver");
+            StartCoroutine(DeathAndRespawn());
             
         }
+    }
+    IEnumerator DeathAndRespawn()
+    {
+        isDead = true;
+
+        yield return new WaitForSeconds(respawnDelay);
+
+        currentLife = initiallife;
+        isDead = false;
+        SceneManager.LoadScene(respawnSceneName);
     }
 
     public void AddLife(int amount)
@@ -47,6 +63,14 @@ public class LifeManager : MonoBehaviour
 
     public void ResetLife()
     {
-        currentLife = 1;
+        currentLife = initiallife;
+        isDead=false;
     }
+
+    public void SetRespawnScene(string sceneName)
+    {
+        respawnSceneName = sceneName;
+    }
+
+    
 }
