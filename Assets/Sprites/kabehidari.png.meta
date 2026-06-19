@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9bcf2c30ac6c0404b9141e612f8f57cb
+guid: 3a62f75e49a28ea44b2b6b5d1e6cb944
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3726702546821719212
-    second: kobone2_0_0
+      213: 9137496661499912721
+    second: kabehidari_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kobone2_0_0
+      name: kabehidari_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 27
-        width: 118
-        height: 62
+        x: 0
+        y: 0
+        width: 101
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45bd52157c7184cc0800000000000000
-      internalID: -3726702546821719212
+      spriteID: 11225051dc8eece70800000000000000
+      internalID: 9137496661499912721
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      kobone2_0_0: -3726702546821719212
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
