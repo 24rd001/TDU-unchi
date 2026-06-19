@@ -542,7 +542,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 154261986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e25e57a72d55564294d39375e940726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 297226500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e25e57a72d55564294d39375e940726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -1049,7 +1049,6 @@ GameObject:
   - component: {fileID: 523200713}
   - component: {fileID: 523200712}
   - component: {fileID: 523200716}
-  - component: {fileID: 523200717}
   m_Layer: 0
   m_Name: Big Born
   m_TagString: Ground
@@ -1214,19 +1213,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 523200711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1792c0ce87c27dd4489b4670661b00cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &523200717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523200711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c77b318b6de1e544beaf8e940aa8b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -1407,7 +1394,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 603571254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e25e57a72d55564294d39375e940726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -1621,7 +1608,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 988871806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e25e57a72d55564294d39375e940726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -1638,7 +1625,7 @@ GameObject:
   - component: {fileID: 1015500265}
   - component: {fileID: 1015500268}
   m_Layer: 0
-  m_Name: Baku
+  m_Name: Candy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1759,7 +1746,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1015500264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c209b0ee388a5f41b889897c61e8638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
@@ -2096,7 +2083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  jumpPower: 8
 --- !u!1 &1481543947
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,7 +2250,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1481543947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b50137c1415b1cf4da437807e9739b42, type: 3}
+  m_Script: {fileID: 11500000, guid: fd46a28112915fa45a6dd50a4c997569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
