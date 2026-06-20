@@ -4307,6 +4307,7 @@ MonoBehaviour:
   maxLife: 3
   currentLife: 1
   respawnSceneName: MouseScene
+  respawnDelay: 1
 --- !u!4 &2120657120
 Transform:
   m_ObjectHideFlags: 0
@@ -4508,23 +4509,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - name: banana
-    frames:
+    runFrames:
     - {fileID: -6326676321984005046, guid: 48791ed6363c7e546b6d39330f4bfb19, type: 3}
     - {fileID: 214751303787918923, guid: 9332231ef90f9da409b69ec01dd637b2, type: 3}
     - {fileID: -51368837527486339, guid: f5c1ce17899f1a24d9857bc5a0dac73c, type: 3}
     - {fileID: -5536431064461936377, guid: b9a05f2bb11c2344cb9a3c25df4a545f, type: 3}
     - {fileID: -3192714025824923799, guid: 3bb013e90d4ab5b448e01dc1c5a4a267, type: 3}
+    deadFrames:
+    - {fileID: -2818209641808662941, guid: 131d054b82c68e54cb48664883af86d9, type: 3}
+    - {fileID: 8373742230181240510, guid: 767e7aa3df5f61444af08d2e66c575ee, type: 3}
+    - {fileID: 264905642020088509, guid: 9ab8a82bb9e93894e98f3c2f55d89084, type: 3}
+    - {fileID: 372254930242395266, guid: ccb1f2e0863398e46897d14bef87bc12, type: 3}
+    - {fileID: -954238583388641785, guid: 16a74e0b037820645af2b7a2f1aa64f6, type: 3}
   - name: samon
-    frames:
+    runFrames:
     - {fileID: -7547502297024975132, guid: 0f352ece05e230749aa5afaa170e3466, type: 3}
     - {fileID: -7447309558702923991, guid: 78b1420cb1a3cea478a87cf997d0721f, type: 3}
     - {fileID: -5002801170467669080, guid: a84c56b07699dd842b15d268e2f500e0, type: 3}
+    deadFrames:
+    - {fileID: 8087800298959562667, guid: 9a0121b8f9e4931498f9fc54dd381ecb, type: 3}
+    - {fileID: -645188840914539703, guid: adf9c2bb369937e47a9cdb3154fa22a7, type: 3}
+    - {fileID: -7553900572168060953, guid: bef15501d70010c4d94ed6867a546f4b, type: 3}
+    - {fileID: -3663815943946142272, guid: eda0d2616ff4ea542bd511fc3242522a, type: 3}
+    - {fileID: -3991289604800364154, guid: 47bc1486394702f49bc4973d9f06385a, type: 3}
+    - {fileID: 3870436651149165147, guid: 4cd0c1714e676a648a99a4cf0600a7e7, type: 3}
   - name: tukune
-    frames:
+    runFrames:
     - {fileID: 3865970662039302100, guid: f836a1aba5e4f704f8f686abab35ea20, type: 3}
     - {fileID: -670784783763560480, guid: 4419e809335c2954296ea9a61cfdef8d, type: 3}
     - {fileID: -3192642338894388366, guid: ea4de0b89fce50e4695898f2a10b07c3, type: 3}
+    deadFrames:
+    - {fileID: 7240580635395518281, guid: 5651358142a2820449899d6a961f054d, type: 3}
+    - {fileID: -1957276135523723107, guid: 18743c36e32e2364d9667de27a4b391e, type: 3}
+    - {fileID: -8013100813987679310, guid: 7ae0a7a0adcb9cd4cbd348e00ee7051a, type: 3}
+    - {fileID: 5587291393361994603, guid: ff1b4c7c300115543aaa8cbd38535728, type: 3}
+    - {fileID: 8485259006633330335, guid: 0da25b44160524f498484b1a81b4f3d1, type: 3}
+    - {fileID: 3614589624042558133, guid: 0db58540f5866c64daadd206dc060faf, type: 3}
   fps: 12
+  deadFps: 8
 --- !u!1001 &754995704900164618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4535,11 +4557,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 60287832330692036, guid: 80448bd44ba4dee4bafdc5c2bfe92111, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.01
+      value: -0.218
       objectReference: {fileID: 0}
     - target: {fileID: 60287832330692036, guid: 80448bd44ba4dee4bafdc5c2bfe92111, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.153
+      value: 0.154
       objectReference: {fileID: 0}
     - target: {fileID: 1262759094024226965, guid: 80448bd44ba4dee4bafdc5c2bfe92111, type: 3}
       propertyPath: m_Size.x

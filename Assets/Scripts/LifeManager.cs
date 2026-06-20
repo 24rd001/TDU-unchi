@@ -44,10 +44,18 @@ public class LifeManager : MonoBehaviour
     {
         isDead = true;
 
+        PlayerDeath playerDeath = FindFirstObjectByType<PlayerDeath>();
+
+        if (playerDeath != null)
+        {
+            playerDeath.Die();
+        }
+
         yield return new WaitForSeconds(respawnDelay);
 
         currentLife = initiallife;
         isDead = false;
+
         SceneManager.LoadScene(respawnSceneName);
     }
 
