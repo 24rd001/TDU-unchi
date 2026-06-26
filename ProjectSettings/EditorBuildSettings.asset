@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/syokudou scene.unity
     guid: 1cac7156c71cd1e4383f07eb317117f8
+  - enabled: 1
+    path: Assets/Scenes/ClearScene.unity
+    guid: b09cf01104e0b0048b20f43371548d1e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
