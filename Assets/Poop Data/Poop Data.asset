@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: poop0
   poopName: nomal poop
-  icon: {fileID: 0}
+  icon: {fileID: 7732053678519194796, guid: d677d15452b5cde4384eaab4f6fbeabe, type: 3}
   rare: 1
   katasa: "\u3075\u3064\u3046"
   nioi: "\u3075\u3064\u3046"

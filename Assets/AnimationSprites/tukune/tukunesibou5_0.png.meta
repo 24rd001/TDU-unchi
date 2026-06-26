@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tukunesibou5_0_0: 8485259006633330335
+      tukunesibou5_0_1: 6742054032552980387
+      tukunesibou5_0_2: -4817247331356005399
+      tukunesibou5_0_3: -7407024589359326453
+      tukunesibou5_0_4: 3866130230990122769
+      tukunesibou5_0_5: 2121214024337243967
+      tukunesibou5_0_6: -4415657865721605020
+      tukunesibou5_0_7: 2356904092904673490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

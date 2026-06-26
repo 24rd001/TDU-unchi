@@ -1898,7 +1898,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 92568ffc66dfc6f429007206d63942e3, type: 2}
   - {fileID: 11400000, guid: d12be15efcb7a37439991fe123e8250c, type: 2}
   - {fileID: 11400000, guid: f70ff0ac4b092ac44a5882839ad12e7f, type: 2}
-  testPoopId: aaaa
+  testPoopId: poop0
   fallPoop: {fileID: 557740137}
   fallPoopImg: {fileID: 557740138}
   banner: {fileID: 848556993}
