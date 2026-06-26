@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fdcf28f94008d4e972cc5c9655de53, type: 3}
   m_Name: Poop Data 1
   m_EditorClassIdentifier: 
-  id: poop1
-  poopName: green Poop
-  icon: {fileID: 0}
+  id: kongari
+  poopName: "\u3053\u3093\u304C\u308A\u3046\u3093\u3061"
+  icon: {fileID: -6326676321984005046, guid: 48791ed6363c7e546b6d39330f4bfb19, type: 3}
   rare: 1
   katasa: "\u3084\u308F\u3089\u304B\u3044"
   nioi: "\u3075\u3064\u3046"

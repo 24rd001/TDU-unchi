@@ -52,6 +52,10 @@ public class ClearSequence : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         yield return Fade(banner, 1f, 0.3f);
 
+        // データを先に取得して絵を差し替え
+        var data = System.Array.Find(poops, p => p != null && p.id == id);
+        if (data && data.icon && fallPoopImg) fallPoopImg.sprite = data.icon;
+
         if (fallPoopImg) SetA(fallPoopImg, 1);
         Vector2 top = poopRest + new Vector2(0, 900);
         yield return Move(fallPoop, top, poopRest, 0.7f, true);
@@ -64,10 +68,9 @@ public class ClearSequence : MonoBehaviour
 
         ZukanProgress.Unlock(id);
 
-        var data = System.Array.Find(poops, p => p != null && p.id == id);
         if (data)
-        {
-            if (cardIcon)    cardIcon.sprite = data.icon;
+        {   
+            if (cardIcon && data.icon) cardIcon.sprite = data.icon;
             if (nameText)    nameText.text   = data.poopName;
             if (rareText)    rareText.text   = "レアド　"   + Stars(data.rare, 5);
             if (katasaText)  katasaText.text = "かたさ　"   + data.katasa;

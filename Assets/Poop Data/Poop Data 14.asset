@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fdcf28f94008d4e972cc5c9655de53, type: 3}
   m_Name: Poop Data 14
   m_EditorClassIdentifier: 
-  id: poop14
-  poopName: red Poop
+  id: ghost
+  poopName: "\u30B4\u30FC\u30B9\u30C8\u3046\u3093\u3061"
   icon: {fileID: 0}
   rare: 1
   katasa: "\u3075\u3064\u3046"
