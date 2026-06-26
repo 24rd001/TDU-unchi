@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/syokudou scene.unity
     guid: 1cac7156c71cd1e4383f07eb317117f8
   - enabled: 1
-    path: Assets/Scenes/I.unity
+    path: Assets/Scenes/IScene.unity
     guid: cad9fd07e0ff264439927b2abd018023
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

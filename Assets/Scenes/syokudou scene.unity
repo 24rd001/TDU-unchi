@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488227958}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6a5ddcdaada46847a1581c5cdd0397b, type: 3}
   m_Name: 
@@ -1583,7 +1583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3d616160730f94798bc08893cb9084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: I
+  nextSceneName: IScene
 --- !u!212 &930453162
 SpriteRenderer:
   m_ObjectHideFlags: 0

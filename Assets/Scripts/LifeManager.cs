@@ -10,7 +10,7 @@ public class LifeManager : MonoBehaviour
     public int currentLife = 1;
 
     
-    public string respawnSceneName = "MouseScene";
+    public string respawnSceneName;
     public float respawnDelay = 2f;
 
     private int initiallife = 1;
@@ -26,6 +26,10 @@ public class LifeManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+    public void SetRespawnScene(string sceneName)
+    {
+        respawnSceneName = sceneName;
     }
 
     public void Damage(int amount)
@@ -75,10 +79,7 @@ public class LifeManager : MonoBehaviour
         isDead=false;
     }
 
-    public void SetRespawnScene(string sceneName)
-    {
-        respawnSceneName = sceneName;
-    }
+    
 
     
 }
