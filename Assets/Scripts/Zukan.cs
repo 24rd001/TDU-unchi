@@ -17,20 +17,31 @@ public class Zukan : MonoBehaviour
     [SerializeField] TMP_Text nameText, rareText, katasaText, nioiText, sukkiriText, descText;
 
     void Start()
+{
+    if (highlight) highlight.gameObject.SetActive(false);
+
+    int unlocked = 0;
+    PoopSlot focusSlot = null;
+    foreach (var p in poops)
     {
-        if (highlight) highlight.gameObject.SetActive(false);
+        PoopSlot slot = Instantiate(slotPrefab, gridParent);
+        slot.Setup(p, this);
+        if (ZukanProgress.IsUnlocked(p.id)) unlocked++;
+        if (!string.IsNullOrEmpty(GameData.FocusPoopId) && p.id == GameData.FocusPoopId) focusSlot = slot;
+    }
+    if (countText) countText.text = unlocked + " / " + poops.Length;
 
-        int unlocked = 0;
-        foreach (var p in poops)
-        {
-            PoopSlot slot = Instantiate(slotPrefab, gridParent);
-            slot.Setup(p, this);
-            if (ZukanProgress.IsUnlocked(p.id)) unlocked++;
-        }
-        if (countText) countText.text = unlocked + " / " + poops.Length;
-
+    if (GameData.CameFromClear && focusSlot != null)
+    {
+        SelectSlot(focusSlot);            // 新種を自動選択＋詳細表示
+        GameData.CameFromClear = false;
+        GameData.FocusPoopId   = "";
+    }
+    else
+    {
         ShowLocked();
     }
+}
 
     // マスをクリックしたとき：金枠を移動 ＋ 詳細表示
     public void SelectSlot(PoopSlot slot)
