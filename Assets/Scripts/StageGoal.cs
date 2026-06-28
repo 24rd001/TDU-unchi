@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class StageGoal : MonoBehaviour
 {
-    public string earnedPoopId = "kongari";  // テスト用に適当なidを入れる
+    public string earnedPoopId = "korokoro";  // テスト用に適当なidを入れる
 
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -1713,7 +1713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c06571f524d6b8429e0c5feaec1b722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  earnedPoopId: kongari
+  earnedPoopId: korokoro
 --- !u!1 &982115029
 GameObject:
   m_ObjectHideFlags: 0

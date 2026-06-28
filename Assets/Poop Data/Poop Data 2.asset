@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: korokoro
   poopName: "\u30B3\u30ED\u30B3\u30ED\u3046\u3093\u3061"
-  icon: {fileID: 0}
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   rare: 1
   katasa: "\u3075\u3064\u3046"
   nioi: "\u3075\u3064\u3046"
