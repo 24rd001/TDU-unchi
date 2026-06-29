@@ -4,7 +4,6 @@ using UnityEngine;
 public class LoopSlime : MonoBehaviour
 {
     public float jumpPower = 10f;
-    public float randomX = 1f;
 
     private Rigidbody2D rb;
 
@@ -16,15 +15,15 @@ public class LoopSlime : MonoBehaviour
 
     void Jump()
     {
-        float x = Random.Range(-randomX, randomX);
-        rb.linearVelocity = new Vector2(x, jumpPower);
+        // ^ã‚É‚¾‚¯”ò‚Ô
+        rb.linearVelocity = new Vector2(0f, jumpPower);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Acid"))
         {
-            Jump();   // ˆİ_‚ÉG‚ê‚½‚çÄ‚ÑƒWƒƒƒ“ƒv
+            Jump();   // —‚¿‚Ä‚«‚ÄG‚ê‚½‚ç‚Ü‚½ã‚Ö
         }
     }
 }

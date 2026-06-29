@@ -4,6 +4,7 @@ public class Damage : MonoBehaviour
 {
     public int damage = 1;
 
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -11,4 +12,5 @@ public class Damage : MonoBehaviour
             LifeManager.Instance.Damage(damage);
         }
     }
+
 }
