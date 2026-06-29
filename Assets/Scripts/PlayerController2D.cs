@@ -80,13 +80,17 @@ public class PlayerController2D : MonoBehaviour
 
     void Flip()
     {
+        Vector3 scale = transform.localScale;
+
         if (moveInput > 0)
         {
-            transform.localScale = new Vector3(3, 3, 3);
+            scale.x = Mathf.Abs(scale.x);
         }
         else if (moveInput < 0)
         {
-            transform.localScale = new Vector3(-3, 3, 3);
+            scale.x = -Mathf.Abs(scale.x);
         }
+
+        transform.localScale = scale;
     }
 }
