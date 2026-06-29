@@ -33,6 +33,7 @@ public class FloatingBreakPlatform : MonoBehaviour
 
             if (transform.localScale.x <= 0.1f)
             {
+                DetachPlayer(); // ← 追加（重要）
                 Destroy(gameObject);
             }
         }
@@ -40,13 +41,11 @@ public class FloatingBreakPlatform : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        // スライムだけ反応
         if (col.gameObject.CompareTag("Slime"))
         {
             isSlimeOn = true;
         }
 
-        // プレイヤーはそのまま乗れる
         if (col.gameObject.CompareTag("Player"))
         {
             col.transform.SetParent(transform);
@@ -60,9 +59,16 @@ public class FloatingBreakPlatform : MonoBehaviour
             isSlimeOn = false;
         }
 
-        if (col.gameObject.CompareTag("Player"))
+        
+    }
+
+    void DetachPlayer()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null && player.transform.parent == transform)
         {
-            col.transform.SetParent(null);
+            player.transform.SetParent(null);
         }
     }
 }
