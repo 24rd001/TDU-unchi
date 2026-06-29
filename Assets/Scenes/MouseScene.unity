@@ -3935,6 +3935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LifeManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8976908948703591031, guid: 9e0fcfc2eb12ef24baa7b1516dc94a46, type: 3}
+      propertyPath: currentLife
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

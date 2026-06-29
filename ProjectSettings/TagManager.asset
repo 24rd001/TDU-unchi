@@ -8,6 +8,7 @@ TagManager:
   - Assid
   - Slime
   - Platform
+  - Enemy
   layers:
   - Default
   - TransparentFX
