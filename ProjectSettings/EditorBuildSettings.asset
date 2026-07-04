@@ -29,6 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LivingScene.unity
     guid: 078aa00b7d428ce4f9f13b9c884e0726
+    path: Assets/Scenes/JyuunisityouScene.unity
+    guid: 8bcc5c14bd8db3643b0ed04b53c4f85c
+  - enabled: 1
+    path: Assets/Scenes/SyoutyouScene.unity
+    guid: 188f74175de1f3241944ff4d65c2e59e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
