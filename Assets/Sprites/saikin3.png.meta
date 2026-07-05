@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      saikin3_0: 1212302491321788952
+      saikin3_1: 2373498875201756120
+      saikin3_2: -7421959238913099870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
