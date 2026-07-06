@@ -14,11 +14,18 @@ public class PlayerController2D : MonoBehaviour
     public LayerMask groundLayer;
     public float groundCheckDistance = 0.08f;
 
+
+    // ★追加：現在向いている方向
+    [HideInInspector]
+    public bool facingRight = true;
+
+
     private Rigidbody2D rb;
     private CircleCollider2D circleCol;
 
     private float moveInput;
     private bool jumpPressed;
+
 
     void Awake()
     {
@@ -27,6 +34,7 @@ public class PlayerController2D : MonoBehaviour
 
         rb.freezeRotation = true;
     }
+
 
     void Update()
     {
@@ -40,6 +48,7 @@ public class PlayerController2D : MonoBehaviour
         Flip();
     }
 
+
     void FixedUpdate()
     {
         Move();
@@ -52,15 +61,24 @@ public class PlayerController2D : MonoBehaviour
         jumpPressed = false;
     }
 
+
     void Move()
     {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(
+            moveInput * moveSpeed,
+            rb.linearVelocity.y
+        );
     }
+
 
     void Jump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+        rb.linearVelocity = new Vector2(
+            rb.linearVelocity.x,
+            jumpPower
+        );
     }
+
 
     bool IsGrounded()
     {
@@ -78,18 +96,29 @@ public class PlayerController2D : MonoBehaviour
         return hit.collider != null;
     }
 
+
     void Flip()
     {
         Vector3 scale = transform.localScale;
 
+
         if (moveInput > 0)
         {
+            // ★追加：右向き
+            facingRight = true;
+
             scale.x = Mathf.Abs(scale.x);
         }
+
+
         else if (moveInput < 0)
         {
+            // ★追加：左向き
+            facingRight = false;
+
             scale.x = -Mathf.Abs(scale.x);
         }
+
 
         transform.localScale = scale;
     }
