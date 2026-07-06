@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10ac79507492dee4ab4eed3fb765d08b
+guid: 1a41986a828bb9c49bd6e0f8d47051c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7008412969330441016
-    second: Attack_0
+      213: -6937122563872544080
+    second: HPBar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attack_0
+      name: HPBar_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 109
-        width: 492
-        height: 322
+        x: 0
+        y: 0
+        width: 256
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c481db598d1dbe90800000000000000
-      internalID: -7008412969330441016
+      spriteID: 0baa70958c36abf90800000000000000
+      internalID: -6937122563872544080
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Attack_0: -7008412969330441016
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
