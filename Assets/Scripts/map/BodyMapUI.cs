@@ -86,7 +86,7 @@ public class BodyMapUI : MonoBehaviour
             else if (i == currentStage)
             {
                 col = currentColor;    // 今ここ＝黄
-                prefix = "▶ ";
+                prefix = "→ ";
             }
             else
             {
