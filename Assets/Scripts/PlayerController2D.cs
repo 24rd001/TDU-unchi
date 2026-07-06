@@ -2,6 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController2D : MonoBehaviour
 {
     [Header("Move")]
@@ -14,8 +15,7 @@ public class PlayerController2D : MonoBehaviour
     public LayerMask groundLayer;
     public float groundCheckDistance = 0.08f;
 
-
-    // ★追加：現在向いている方向
+    // 現在向いている方向
     [HideInInspector]
     public bool facingRight = true;
 
@@ -24,6 +24,7 @@ public class PlayerController2D : MonoBehaviour
 
     private Rigidbody2D rb;
     private CircleCollider2D circleCol;
+    private SpriteRenderer sr;
 
     private float moveInput;
     private bool jumpPressed;
@@ -34,14 +35,13 @@ public class PlayerController2D : MonoBehaviour
     private float originalGravityScale;
 
     void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        circleCol = GetComponent<CircleCollider2D>();
+{
+    rb = GetComponent<Rigidbody2D>();
+    circleCol = GetComponent<CircleCollider2D>();
+    sr = GetComponent<SpriteRenderer>();
 
-        rb.freezeRotation = true;
-        originalGravityScale = rb.gravityScale;
-    }
-
+   
+}
 
     void Update()
     {
@@ -60,7 +60,6 @@ public class PlayerController2D : MonoBehaviour
 
         Flip();
     }
-
 
     void FixedUpdate()
     {
@@ -81,7 +80,6 @@ public class PlayerController2D : MonoBehaviour
         jumpPressed = false;
     }
 
-
     void Move()
     {
         rb.linearVelocity = new Vector2(
@@ -90,7 +88,6 @@ public class PlayerController2D : MonoBehaviour
         );
     }
 
-
     void Jump()
     {
         rb.linearVelocity = new Vector2(
@@ -98,7 +95,6 @@ public class PlayerController2D : MonoBehaviour
             jumpPower
         );
     }
-
 
     bool IsGrounded()
     {
@@ -116,33 +112,19 @@ public class PlayerController2D : MonoBehaviour
         return hit.collider != null;
     }
 
-
-    void Flip()
+void Flip()
+{
+    if (moveInput > 0)
     {
-        Vector3 scale = transform.localScale;
-
-
-        if (moveInput > 0)
-        {
-            // ★追加：右向き
-            facingRight = true;
-
-            scale.x = Mathf.Abs(scale.x);
-        }
-
-
-        else if (moveInput < 0)
-        {
-            // ★追加：左向き
-            facingRight = false;
-
-            scale.x = -Mathf.Abs(scale.x);
-        }
-
-
-        transform.localScale = scale;
+        facingRight = true;
+        sr.flipX = false;
     }
-
+    else if (moveInput < 0)
+    {
+        facingRight = false;
+        sr.flipX = true;
+    }
+}
     public void StartTrap(Vector2 position)
     {
         if (isTrapped) return;

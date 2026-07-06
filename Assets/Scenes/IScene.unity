@@ -2443,6 +2443,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3156270708313890439, guid: 65193cf6be7d55146ba4389259625efa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1379287430}
+    - targetCorrespondingSourceObject: {fileID: 3156270708313890439, guid: 65193cf6be7d55146ba4389259625efa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1379287436}
   m_SourcePrefab: {fileID: 100100000, guid: 65193cf6be7d55146ba4389259625efa, type: 3}
 --- !u!4 &1235464882 stripped
 Transform:
@@ -2732,6 +2735,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a954087e2db104840961f744a267fccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1379287436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379287424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa85b25babb82848a2f7300d6b91116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 1845171810915739030, guid: 16b4fd73fe37330429cebbf40ac99749, type: 3}
+  projectileSpeed: 15
+  spawnOffset: 1
+  attackCooldown: 3
 --- !u!1 &1400059601
 GameObject:
   m_ObjectHideFlags: 0
