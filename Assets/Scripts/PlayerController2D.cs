@@ -19,6 +19,8 @@ public class PlayerController2D : MonoBehaviour
     [HideInInspector]
     public bool facingRight = true;
 
+    [Header("Villi Trap")]
+    public int escapeCount = 15;
 
     private Rigidbody2D rb;
     private CircleCollider2D circleCol;
@@ -26,6 +28,10 @@ public class PlayerController2D : MonoBehaviour
     private float moveInput;
     private bool jumpPressed;
 
+    private bool isTrapped = false;
+    private int mashCount = 0;
+    private Vector2 trapPosition;
+    private float originalGravityScale;
 
     void Awake()
     {
@@ -33,12 +39,19 @@ public class PlayerController2D : MonoBehaviour
         circleCol = GetComponent<CircleCollider2D>();
 
         rb.freezeRotation = true;
+        originalGravityScale = rb.gravityScale;
     }
 
 
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
+
+        if (isTrapped)
+        {
+            TrapInput();
+            return;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -51,6 +64,13 @@ public class PlayerController2D : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isTrapped)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.position = trapPosition;
+            return;
+        }
+
         Move();
 
         if (jumpPressed && IsGrounded())
@@ -121,5 +141,43 @@ public class PlayerController2D : MonoBehaviour
 
 
         transform.localScale = scale;
+    }
+
+    public void StartTrap(Vector2 position)
+    {
+        if (isTrapped) return;
+
+        isTrapped = true;
+        mashCount = 0;
+        trapPosition = position;
+
+        rb.linearVelocity = Vector2.zero;
+        rb.gravityScale = 0f;
+    }
+
+    void TrapInput()
+    {
+        if (Input.GetKeyDown(KeyCode.A) ||
+            Input.GetKeyDown(KeyCode.D) ||
+            Input.GetKeyDown(KeyCode.LeftArrow) ||
+            Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            mashCount++;
+        }
+
+        if (mashCount >= escapeCount)
+        {
+            EscapeTrap();
+        }
+    }
+
+    void EscapeTrap()
+    {
+        isTrapped = false;
+        mashCount = 0;
+
+        rb.gravityScale = originalGravityScale;
+
+        rb.linearVelocity = new Vector2(0f, 3f);
     }
 }
