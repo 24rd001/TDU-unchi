@@ -35,13 +35,17 @@ public class PlayerController2D : MonoBehaviour
     private float originalGravityScale;
 
     void Awake()
-{
-    rb = GetComponent<Rigidbody2D>();
-    circleCol = GetComponent<CircleCollider2D>();
-    sr = GetComponent<SpriteRenderer>();
 
-   
-}
+    {
+        rb = GetComponent<Rigidbody2D>();
+        circleCol = GetComponent<CircleCollider2D>();
+        sr = GetComponent<SpriteRenderer>();
+
+        rb.freezeRotation = true;
+
+        originalGravityScale = rb.gravityScale;
+    }
+
 
     void Update()
     {
