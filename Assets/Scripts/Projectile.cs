@@ -9,9 +9,11 @@ public class Projectile : MonoBehaviour
 
     public float maxDistance = 3f;
 
+    [Header("Damage")]
+    public int damage = 5;
+
     void Start()
     {
-        // 初期位置保存（Instantiate直後の位置）
         startPosition = transform.position;
     }
 
@@ -20,7 +22,6 @@ public class Projectile : MonoBehaviour
         direction = dir;
         speed = spd;
 
-        // 🔥 見た目の向きを確実に反転（flipXは使わない）
         Vector3 scale = transform.localScale;
 
         if (dir.x < 0)
@@ -37,10 +38,8 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        // 移動
         transform.Translate(direction * speed * Time.deltaTime);
 
-        // 距離チェック（3マスで消える）
         float distance = Vector2.Distance(startPosition, transform.position);
 
         if (distance >= maxDistance)
@@ -51,9 +50,11 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        EnemyHP enemyHP = other.GetComponent<EnemyHP>();
+
+        if (enemyHP != null)
         {
-            Destroy(other.gameObject);
+            enemyHP.TakeDamage(damage);
             Destroy(gameObject);
         }
     }
