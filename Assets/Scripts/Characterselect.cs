@@ -27,7 +27,7 @@ public class CharacterSelect : MonoBehaviour
     {
         GameData.SelectedCharacter = index;
         Debug.Log("決定：" + index);
-        SceneManager.LoadScene("MouseScene");
+        SceneManager.LoadScene("EatingScene");
     }
 
     public void Back() => SceneManager.LoadScene("TitleScene");
