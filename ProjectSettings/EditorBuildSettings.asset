@@ -35,8 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WakeUpScene.unity
     guid: a8cb7291ad87f78489870192a971ea73
-    path: Assets/Scenes/JyuunisityouScene.unity
-    guid: 8bcc5c14bd8db3643b0ed04b53c4f85c
   - enabled: 1
     path: Assets/Scenes/DaityouScene.unity
     guid: 4330e454a2c708941b63623bd5a8f94d
