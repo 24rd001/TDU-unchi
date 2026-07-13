@@ -4,20 +4,26 @@ public class Switch : MonoBehaviour
 {
     private bool activated = false;
 
+    public Transform stageRoot;
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        // すでに作動済みなら何もしない
         if (activated) return;
 
-        // プレイヤーが触れた場合
         if (other.CompareTag("Player"))
         {
             activated = true;
 
-            // スイッチON
-            GameManager.Instance.switchA = true;
+            // 0�x�ɂ���
+            GameManager.Instance.daityouRotation = 0f;
 
-            // スイッチを消す
+            stageRoot.rotation =
+                Quaternion.Euler(
+                    0f,
+                    0f,
+                    GameManager.Instance.daityouRotation
+                );
+
             Destroy(gameObject);
         }
     }
