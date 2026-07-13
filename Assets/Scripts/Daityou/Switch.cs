@@ -14,6 +14,8 @@ public class Switch : MonoBehaviour
         {
             activated = true;
 
+            // スイッチON
+            GameManager.Instance.switchA = true;
             // 0度にする
             GameManager.Instance.daityouRotation = 0f;
 
