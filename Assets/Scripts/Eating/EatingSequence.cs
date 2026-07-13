@@ -26,7 +26,7 @@ public class EatingSequence : MonoBehaviour
     public float irisStartScale = 140f;   // 穴が画面より大きい状態
     public float irisEndScale = 1.9f;     // 穴がほぼ閉じた状態
 
-    static readonly string[] foodNames = { "つくね", "サーモン", "バナナ" };
+    static readonly string[] foodNames = { "バナナ", "サーモン", "つくね" };
 
     RectTransform foodRect;
 

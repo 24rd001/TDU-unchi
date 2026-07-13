@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ff4c14c5272659c4db7da9b3f267fbce
+guid: 02de591b935b35f48a75a9509e06b07d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2037798477531084004
-    second: proteinge-zi_0
+      213: -1314011713190030019
+    second: protein-background_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: proteinge-zi_0
+      name: protein-background_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1254
-        height: 1254
+        width: 1213
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e472192be6b74c10800000000000000
-      internalID: 2037798477531084004
+      spriteID: d351b9c0f41b3cde0800000000000000
+      internalID: -1314011713190030019
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      protein-background_0: -1314011713190030019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
