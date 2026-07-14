@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class StatusManager : MonoBehaviour
@@ -11,6 +12,11 @@ public class StatusManager : MonoBehaviour
     public float maxWater = 100;
     public float maxNutrition = 100;
     public float maxProtein = 100;
+
+    [Header("食べたアイテムの記録")]
+    public HashSet<string> takenItemNames = new HashSet<string>();
+    public int totalItemCount = 0;
+    public int pepperCount = 0;
 
     void Awake()
     {
@@ -34,7 +40,18 @@ public class StatusManager : MonoBehaviour
 
     public void RecordItem(string itemName, bool isPepper)
     {
-        // 図鑑（Zukan）登録などがあればここに実装
-        // まだ何も無ければ空のままでOK（コンパイルは通ります）
+        takenItemNames.Add(itemName);
+        totalItemCount++;
+        if (isPepper) pepperCount++;
+    }
+
+    public void ResetStatus()
+    {
+        water = 0;
+        nutrition = 0;
+        protein = 0;
+        takenItemNames.Clear();
+        totalItemCount = 0;
+        pepperCount = 0;
     }
 }
