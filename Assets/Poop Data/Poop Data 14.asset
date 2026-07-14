@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: ghost
   poopName: "\u30B4\u30FC\u30B9\u30C8\u3046\u3093\u3061"
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 76198b566172be442aeb78a4b1e49b22, type: 3}
   rare: 1
   katasa: "\u3075\u3064\u3046"
   nioi: "\u3075\u3064\u3046"

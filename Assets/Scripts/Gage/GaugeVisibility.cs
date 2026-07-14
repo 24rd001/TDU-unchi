@@ -40,6 +40,10 @@ public class GaugeVisibility : MonoBehaviour
                 break;
             }
         }
+
+        Debug.Log($"[GaugeVisibility] シーン名: '{sceneName}' / 隠す判定: {shouldHide}"); // ← この行を追加
+
+
         gameObject.SetActive(!shouldHide);
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: makkuro
   poopName: "\u307E\u3063\u304F\u308D\u3046\u3093\u3061"
-  icon: {fileID: 0}
+  icon: {fileID: 7325599739529618512, guid: 7938701f6553cbd4a85bd6e90c6548ec, type: 3}
   rare: 1
   katasa: "\u3075\u3064\u3046"
   nioi: "\u3075\u3064\u3046"

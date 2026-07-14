@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: kongari
   poopName: "\u3053\u3093\u304C\u308A\u3046\u3093\u3061"
-  icon: {fileID: -6326676321984005046, guid: 48791ed6363c7e546b6d39330f4bfb19, type: 3}
+  icon: {fileID: 21300000, guid: 44b877e91619d3e4493b8b49a0061c36, type: 3}
   rare: 1
   katasa: "\u3084\u308F\u3089\u304B\u3044"
   nioi: "\u3075\u3064\u3046"
