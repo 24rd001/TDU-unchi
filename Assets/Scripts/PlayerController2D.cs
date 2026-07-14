@@ -15,6 +15,9 @@ public class PlayerController2D : MonoBehaviour
     public LayerMask groundLayer;
     public float groundCheckDistance = 0.08f;
 
+    [Header("Wall Check")]
+    public float wallCheckDistance = 0.1f;
+
     // 現在向いている方向
     [HideInInspector]
     public bool facingRight = true;
@@ -76,7 +79,7 @@ public class PlayerController2D : MonoBehaviour
 
         Move();
 
-        if (jumpPressed && IsGrounded())
+        if (jumpPressed &&IsGrounded() &&!IsTouchingWall())
         {
             Jump();
         }
@@ -86,6 +89,14 @@ public class PlayerController2D : MonoBehaviour
 
     void Move()
     {
+        if (IsTouchingWall() && !IsGrounded())
+        {
+            rb.linearVelocity =
+                new Vector2(0f, rb.linearVelocity.y);
+
+            return;
+        }
+
         rb.linearVelocity = new Vector2(
             moveInput * moveSpeed,
             rb.linearVelocity.y
@@ -116,7 +127,22 @@ public class PlayerController2D : MonoBehaviour
         return hit.collider != null;
     }
 
-void Flip()
+    bool IsTouchingWall()
+    {
+        Vector2 direction =
+            facingRight ? Vector2.right : Vector2.left;
+
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            direction,
+            wallCheckDistance
+        );
+
+        return hit.collider != null &&
+               hit.collider.CompareTag("Wall");
+    }
+
+    void Flip()
 {
     if (moveInput > 0)
     {
