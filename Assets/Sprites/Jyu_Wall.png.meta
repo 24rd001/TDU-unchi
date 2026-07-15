@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 657434796096f754ca5459b7fe65261b
+guid: 7990b9d371893f74893d2fee55df21ad
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -34587904462641528
-    second: ti-zu_0
+      213: -5531470820915755399
+    second: Jyu_Wall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ti-zu_0
+      name: Jyu_Wall_0
       rect:
         serializedVersion: 2
-        x: 219
-        y: 159
-        width: 862
-        height: 552
+        x: 411
+        y: 70
+        width: 72
+        height: 715
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 886aaf0fb7e158ff0800000000000000
-      internalID: -34587904462641528
+      spriteID: 976c0e968944c33b0800000000000000
+      internalID: -5531470820915755399
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ti-zu_0: -34587904462641528
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

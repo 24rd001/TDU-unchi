@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kyabetu_0: 6002463028397491486
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

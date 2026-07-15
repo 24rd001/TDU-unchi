@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fiber-background_0: 1014528279166564758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
