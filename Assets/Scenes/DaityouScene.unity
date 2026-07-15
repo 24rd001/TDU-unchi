@@ -2198,7 +2198,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219786924431187972, guid: 438b22f3b239399488278a48fb075ea8, type: 3}
       propertyPath: nextSceneName
-      value: Koumon
+      value: WakeUpScene
       objectReference: {fileID: 0}
     - target: {fileID: 3429540346699357137, guid: 438b22f3b239399488278a48fb075ea8, type: 3}
       propertyPath: m_Name

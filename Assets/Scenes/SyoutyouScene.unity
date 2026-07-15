@@ -12785,8 +12785,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: 0
   nutrition: 0
+  protein: 0
   maxWater: 100
   maxNutrition: 100
+  maxProtein: 100
+  totalItemCount: 0
+  pepperCount: 0
 --- !u!4 &1126317786
 Transform:
   m_ObjectHideFlags: 0
@@ -15164,7 +15168,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522aa7a580b75ab44bae98442682ca8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 15
+  itemName: "\u30AD\u30E3\u30D9\u30C4"
+  waterAmount: 0
+  nutritionAmount: 0
+  proteinAmount: 0
+  isPepper: 0
   expValue: 100
 --- !u!58 &1381033615
 CircleCollider2D:
@@ -15783,7 +15791,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522aa7a580b75ab44bae98442682ca8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 15
+  itemName: "\u30AD\u30E3\u30D9\u30C4"
+  waterAmount: 0
+  nutritionAmount: 0
+  proteinAmount: 0
+  isPepper: 0
   expValue: 140
 --- !u!58 &1465595970
 CircleCollider2D:
@@ -24164,7 +24176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2219786924431187972, guid: 438b22f3b239399488278a48fb075ea8, type: 3}
       propertyPath: nextSceneName
-      value: DaityouScene
+      value: LivingScene
       objectReference: {fileID: 0}
     - target: {fileID: 3429540346699357137, guid: 438b22f3b239399488278a48fb075ea8, type: 3}
       propertyPath: m_Name
