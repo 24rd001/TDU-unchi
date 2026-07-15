@@ -19,11 +19,11 @@ public class Enemyjump : MonoBehaviour
         rb.linearVelocity = new Vector2(0f, jumpPower);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            Jump();   // —‚¿‚Ä‚«‚ÄG‚ê‚½‚ç‚Ü‚½ã‚Ö
+            Jump();
         }
     }
 }
