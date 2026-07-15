@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Koumon_Wall_0: -2002586324183546978
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
