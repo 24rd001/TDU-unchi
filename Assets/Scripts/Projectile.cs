@@ -50,6 +50,15 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        BossHP bossHP = other.GetComponent<BossHP>();
+
+        if (bossHP != null)
+        {
+            bossHP.TakeDamage(damage);
+            Destroy(gameObject);
+            return;
+        }
+
         EnemyHP enemyHP = other.GetComponent<EnemyHP>();
 
         if (enemyHP != null)
@@ -58,4 +67,5 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }

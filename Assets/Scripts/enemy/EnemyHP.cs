@@ -2,47 +2,33 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
-    [Header("HP")]
-    public int maxHP = 30;
-    public int currentHP;
+    public int maxHP = 3;
 
-    [Header("HP Bar")]
-    public HPBar hpBar;
-
-    private Boss boss;
+    private int currentHP;
 
     void Start()
     {
-        boss = GetComponent<Boss>();
-
-        if (boss != null)
-        {
-            maxHP = boss.EHP;
-        }
-
         currentHP = maxHP;
-
-        if (hpBar != null)
-        {
-            hpBar.maxHP = maxHP;
-            hpBar.SetHP(currentHP);
-        }
     }
 
     public void TakeDamage(int damage)
     {
         currentHP -= damage;
-        currentHP = Mathf.Clamp(currentHP, 0, maxHP);
 
-        if (hpBar != null)
+        if (currentHP <= 0)
         {
-            hpBar.SetHP(currentHP);
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // ŒoŒ±’l•t—^
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.AddExp(10);
         }
 
-        // Boss.cs‚ÌEHP‚àŒ¸‚ç‚·
-        if (boss != null)
-        {
-            boss.TakeDamage(damage);
-        }
+        Destroy(gameObject);
     }
 }
