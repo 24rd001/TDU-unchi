@@ -402,8 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 961689846}
 --- !u!212 &15380983
 SpriteRenderer:
@@ -743,8 +743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1444907420}
 --- !u!212 &61857670
 SpriteRenderer:
@@ -1303,8 +1303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 221815072}
 --- !u!212 &173633339
 SpriteRenderer:
@@ -1644,8 +1644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 612441805}
 --- !u!212 &175893051
 SpriteRenderer:
@@ -1985,8 +1985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1981907985}
 --- !u!212 &185538205
 SpriteRenderer:
@@ -2429,8 +2429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1275103619}
 --- !u!212 &229307318
 SpriteRenderer:
@@ -3061,8 +3061,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 888307166}
 --- !u!212 &374237496
 SpriteRenderer:
@@ -3852,8 +3852,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 214074171}
 --- !u!212 &430801720
 SpriteRenderer:
@@ -4234,8 +4234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 841020786}
 --- !u!212 &445671197
 SpriteRenderer:
@@ -5050,8 +5050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 2134385702}
 --- !u!60 &516303194
 PolygonCollider2D:
@@ -6364,8 +6364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1230628366}
 --- !u!212 &625010725
 SpriteRenderer:
@@ -6746,8 +6746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1120222037}
 --- !u!212 &627521078
 SpriteRenderer:
@@ -7087,8 +7087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 559832611}
 --- !u!212 &654022486
 SpriteRenderer:
@@ -7428,8 +7428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1585478961}
 --- !u!212 &687897866
 SpriteRenderer:
@@ -7841,8 +7841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 272313106}
 --- !u!212 &718465453
 SpriteRenderer:
@@ -8402,8 +8402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1473440462}
 --- !u!212 &776085012
 SpriteRenderer:
@@ -8836,8 +8836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 2105924470}
 --- !u!212 &880171814
 SpriteRenderer:
@@ -9270,8 +9270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1571158864}
 --- !u!212 &893259022
 SpriteRenderer:
@@ -9642,8 +9642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 2015220968}
 --- !u!212 &934205630
 SpriteRenderer:
@@ -9983,8 +9983,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 317746139}
 --- !u!212 &951246035
 SpriteRenderer:
@@ -10396,8 +10396,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 887041897}
 --- !u!212 &975507124
 SpriteRenderer:
@@ -11259,8 +11259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 2021001141}
 --- !u!212 &1038423025
 SpriteRenderer:
@@ -11631,8 +11631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1169328786}
 --- !u!212 &1065993334
 SpriteRenderer:
@@ -12075,8 +12075,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1529219882}
 --- !u!212 &1108830091
 SpriteRenderer:
@@ -12164,8 +12164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1956107765}
 --- !u!212 &1119125333
 SpriteRenderer:
@@ -13253,8 +13253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 297672164}
 --- !u!212 &1153525685
 SpriteRenderer:
@@ -14294,8 +14294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1189376709}
 --- !u!212 &1329919747
 SpriteRenderer:
@@ -15268,8 +15268,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1194374522}
 --- !u!212 &1441960789
 SpriteRenderer:
@@ -15780,8 +15780,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 795690535}
 --- !u!212 &1521272032
 SpriteRenderer:
@@ -16152,8 +16152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 906617850}
 --- !u!212 &1549307221
 SpriteRenderer:
@@ -16534,8 +16534,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 487252152}
 --- !u!212 &1550517482
 SpriteRenderer:
@@ -16916,8 +16916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1106357828}
 --- !u!212 &1558886910
 SpriteRenderer:
@@ -17288,8 +17288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 744975370}
 --- !u!212 &1572640679
 SpriteRenderer:
@@ -17763,8 +17763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1593649896}
 --- !u!212 &1605044650
 SpriteRenderer:
@@ -18486,8 +18486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1764235114}
 --- !u!212 &1619281619
 SpriteRenderer:
@@ -18868,8 +18868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 280038272}
 --- !u!212 &1668906036
 SpriteRenderer:
@@ -19250,8 +19250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1420109624}
 --- !u!212 &1683740776
 SpriteRenderer:
@@ -19713,8 +19713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1015133233}
 --- !u!212 &1726801769
 SpriteRenderer:
@@ -20508,8 +20508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1918904875}
 --- !u!212 &1791628088
 SpriteRenderer:
@@ -20890,8 +20890,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1141698093}
 --- !u!212 &1840920849
 SpriteRenderer:
@@ -21231,8 +21231,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 717432952}
 --- !u!212 &1850636576
 SpriteRenderer:
@@ -21613,8 +21613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1404740856}
 --- !u!212 &1855512828
 SpriteRenderer:
@@ -21995,8 +21995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 810252956}
 --- !u!212 &1869357844
 SpriteRenderer:
@@ -22429,8 +22429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 892690586}
 --- !u!212 &1916973296
 SpriteRenderer:
@@ -22917,8 +22917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1211357270}
 --- !u!212 &1946513329
 SpriteRenderer:
@@ -23506,8 +23506,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 405949132}
 --- !u!212 &2102433588
 SpriteRenderer:
@@ -23947,8 +23947,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf2597e4c500e4fbea4ab5bbfd684f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLoss: 10
-  nutritionLoss: 10
+  waterLoss: 1
+  nutritionLoss: 0
   holdPoint: {fileID: 1085188002}
 --- !u!212 &2116191038
 SpriteRenderer:
