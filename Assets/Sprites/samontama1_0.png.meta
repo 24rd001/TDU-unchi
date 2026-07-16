@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 810c2054d2362114d9543a9595610f3d
+guid: ac69f48d20c58d349a2c45fa7a2571ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9062977221446700803
-    second: clock1_0_0
+      213: -9195441369558784852
+    second: samontama1_0_0
+  - first:
+      213: 3834757909557902056
+    second: samontama1_0_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clock1_0_0
+      name: samontama1_0_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 9
-        width: 482
-        height: 592
+        x: 7
+        y: 46
+        width: 18
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30f89c3e3c926cd70800000000000000
-      internalID: 9062977221446700803
+      spriteID: ca4648e3bca336080800000000000000
+      internalID: -9195441369558784852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: samontama1_0_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 44
+        width: 171
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea71d6500cc73530800000000000000
+      internalID: 3834757909557902056
       vertices: []
       indices: 
       edges: []
@@ -134,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      clock1_0_0: 9062977221446700803
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

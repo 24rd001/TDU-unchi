@@ -3,12 +3,14 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Projectile")]
-    public GameObject projectilePrefab;
+    public GameObject[] projectilePrefabs;
+
     public float projectileSpeed = 15f;
     public float spawnOffset = 1f;
 
     private PlayerController2D playerController;
     private float lastAttackTime = -999f;
+
     public float attackCooldown = 3f;
 
     void Start()
@@ -30,15 +32,22 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
-        Vector2 direction;
+        int sel = GameData.SelectedCharacter;
 
-        if (playerController.facingRight)
-            direction = Vector2.right;
-        else
-            direction = Vector2.left;
+        if (sel < 0 || sel >= projectilePrefabs.Length)
+            return;
+
+        GameObject projectilePrefab =
+            projectilePrefabs[sel];
+
+        Vector2 direction =
+            playerController.facingRight
+            ? Vector2.right
+            : Vector2.left;
 
         Vector2 spawnPos =
-            (Vector2)transform.position + direction * spawnOffset;
+            (Vector2)transform.position +
+            direction * spawnOffset;
 
         GameObject obj = Instantiate(
             projectilePrefab,
@@ -46,11 +55,15 @@ public class PlayerAttack : MonoBehaviour
             Quaternion.identity
         );
 
-        Projectile projectile = obj.GetComponent<Projectile>();
+        Projectile projectile =
+            obj.GetComponent<Projectile>();
 
         if (projectile != null)
         {
-            projectile.Initialize(direction, projectileSpeed);
+            projectile.Initialize(
+                direction,
+                projectileSpeed
+            );
         }
     }
 }

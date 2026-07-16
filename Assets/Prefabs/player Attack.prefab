@@ -138,6 +138,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   groundCheckDistance: 0.08
+  wallCheckDistance: 0.1
   facingRight: 1
   escapeCount: 15
 --- !u!58 &2959118489252886046
@@ -252,7 +253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa85b25babb82848a2f7300d6b91116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1845171810915739030, guid: 16b4fd73fe37330429cebbf40ac99749, type: 3}
+  projectilePrefabs:
+  - {fileID: 2421677878168482292, guid: 04e7f7550723d574abe333410c56315f, type: 3}
+  - {fileID: 3897351302384281733, guid: 4bf1b05ff73d48f48a7e9c4639467a76, type: 3}
+  - {fileID: 1845171810915739030, guid: 16b4fd73fe37330429cebbf40ac99749, type: 3}
   projectileSpeed: 15
   spawnOffset: 1
   attackCooldown: 3
