@@ -32,10 +32,17 @@ public class PlayerController2D : MonoBehaviour
     private float moveInput;
     private bool jumpPressed;
 
+    private int jumpCount = 0;
+    private int maxJumpCount = 1;
+
+
+    private float baseMoveSpeed;
+
     private bool isTrapped = false;
     private int mashCount = 0;
     private Vector2 trapPosition;
     private float originalGravityScale;
+
 
     void Awake()
 
@@ -47,6 +54,8 @@ public class PlayerController2D : MonoBehaviour
         rb.freezeRotation = true;
 
         originalGravityScale = rb.gravityScale;
+
+        baseMoveSpeed = moveSpeed;
     }
 
 
@@ -66,6 +75,8 @@ public class PlayerController2D : MonoBehaviour
         }
 
         Flip();
+
+        ApplyLevelBonus();
     }
 
     void FixedUpdate()
@@ -79,9 +90,20 @@ public class PlayerController2D : MonoBehaviour
 
         Move();
 
-        if (jumpPressed &&IsGrounded() &&!IsTouchingWall())
+        if (IsGrounded() && rb.linearVelocity.y <= 0f)
+        {
+            jumpCount = 0;
+        }
+
+
+        
+
+        if (jumpPressed &&
+            jumpCount < maxJumpCount &&
+            !IsTouchingWall())
         {
             Jump();
+            jumpCount++;
         }
 
         jumpPressed = false;
@@ -191,5 +213,31 @@ public class PlayerController2D : MonoBehaviour
         rb.gravityScale = originalGravityScale;
 
         rb.linearVelocity = new Vector2(0f, 3f);
+    }
+
+    void ApplyLevelBonus()
+    {
+        if (LevelManager.Instance == null)
+            return;
+
+        // Lv2で二段ジャンプ解放
+        if (LevelManager.Instance.level >= 2)
+        {
+            maxJumpCount = 2;
+        }
+        else
+        {
+            maxJumpCount = 1;
+        }
+
+        // Lv3で移動速度アップ
+        if (LevelManager.Instance.level >= 3)
+        {
+            moveSpeed = baseMoveSpeed + 0.5f;
+        }
+        else
+        {
+            moveSpeed = baseMoveSpeed;
+        }
     }
 }

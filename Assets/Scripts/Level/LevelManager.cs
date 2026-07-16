@@ -15,11 +15,27 @@ public class LevelManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
     {
+        if (levelText == null)
+        {
+            GameObject obj = GameObject.Find("LevelText");
+
+            if (obj != null)
+            {
+                levelText = obj.GetComponent<TMP_Text>();
+            }
+        }
 
         if (levelText != null)
         {
