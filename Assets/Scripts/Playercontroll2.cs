@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CircleCollider2D))]
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerControll2 : MonoBehaviour
+public class PlayerController2D : MonoBehaviour
 {
     [Header("Move")]
     public float moveSpeed = 6f;
@@ -87,21 +87,26 @@ public class PlayerControll2 : MonoBehaviour
         jumpPressed = false;
     }
 
-    void Move()
+  void Move()
+{
+    if (IsTouchingWall() && !IsGrounded())
     {
-        if (IsTouchingWall() && !IsGrounded())
-        {
-            rb.linearVelocity =
-                new Vector2(0f, rb.linearVelocity.y);
-
-            return;
-        }
-
-        rb.linearVelocity = new Vector2(
-            moveInput * moveSpeed,
-            rb.linearVelocity.y
-        );
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        return;
     }
+
+    // 入力がないときは横方向の速度を0にする
+    if (Mathf.Abs(moveInput) < 0.01f)
+    {
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        return;
+    }
+
+    rb.linearVelocity = new Vector2(
+        moveInput * moveSpeed,
+        rb.linearVelocity.y
+    );
+}
 
     void Jump()
     {
