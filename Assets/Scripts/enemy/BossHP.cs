@@ -5,11 +5,13 @@ public class BossHP : MonoBehaviour
     [Header("HP")]
     public int maxHP = 30;
     public int currentHP;
+    
 
     [Header("HP Bar")]
     public HPBar hpBar;
 
     private Boss boss;
+
 
     void Start()
     {

@@ -2271,7 +2271,7 @@ MonoBehaviour:
   - {fileID: -6790119120402503863, guid: 641b08808a703ff4bb758973c25b9088, type: 3}
   - {fileID: 5028947258628244237, guid: 2cbb586160d18c0429ece88e0f0243ad, type: 3}
   - {fileID: 7502089066171070551, guid: 30ab37b629aac704b94d46ef55a088a4, type: 3}
-  fps: 6
+  fps: 14
 --- !u!212 &6638579227073528172
 SpriteRenderer:
   m_ObjectHideFlags: 0

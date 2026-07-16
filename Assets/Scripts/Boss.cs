@@ -16,6 +16,8 @@ public class Boss : MonoBehaviour
 
     private float timer = 0f;
 
+    public GameObject blockWall;
+
     private enum State
     {
         Normal,
@@ -136,6 +138,11 @@ public class Boss : MonoBehaviour
 
     void Die()
     {
+        if (blockWall != null)
+        {
+            Destroy(blockWall);
+        }
+
         Destroy(gameObject);
     }
 }
