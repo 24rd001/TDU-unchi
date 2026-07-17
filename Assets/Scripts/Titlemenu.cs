@@ -20,7 +20,7 @@ public class TitleMenu : MonoBehaviour
     }
 
     public void StartGame()   => SceneManager.LoadScene("CharacterSelect");
-    public void OpenOptions() { Debug.Log("オプション"); /* SceneManager.LoadScene("Options"); */ }
+    public void OpenOptions() => SceneManager.LoadScene("OperationScene");
     public void OpenZukan() => SceneManager.LoadScene("Zukan");
     public void QuitGame()    => Application.Quit();
 }

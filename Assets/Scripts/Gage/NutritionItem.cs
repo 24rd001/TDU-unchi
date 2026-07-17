@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NutritionItem : MonoBehaviour
 {
@@ -16,6 +17,21 @@ public class NutritionItem : MonoBehaviour
     [Header("既存のレベルシステムと連携する場合")]
     public float expValue = 10;
 
+    private string uniqueId;
+
+    void Awake()
+    {
+        // シーン名＋座標からこのアイテム固有のIDを自動生成
+        Vector3 pos = transform.position;
+        uniqueId = $"{SceneManager.GetActiveScene().name}_{pos.x:F2}_{pos.y:F2}_{itemName}";
+
+        // すでに取得済みなら、出現させずに消す
+        if (CollectedItemsManager.Instance != null && CollectedItemsManager.Instance.IsCollected(uniqueId))
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
@@ -27,6 +43,9 @@ public class NutritionItem : MonoBehaviour
 
         if (LevelManager.Instance != null)
             LevelManager.Instance.AddExp(expValue);
+
+        if (CollectedItemsManager.Instance != null)
+            CollectedItemsManager.Instance.MarkCollected(uniqueId);
 
         Destroy(gameObject);
     }

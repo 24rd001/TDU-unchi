@@ -837,6 +837,9 @@ MonoBehaviour:
   - sceneName: ClearScene
     clip: {fileID: 8300000, guid: a4a4abfab7c3b154585a5a2c96224c3b, type: 3}
     volume: 1
+  - sceneName: OperationScene
+    clip: {fileID: 8300000, guid: 4d60af2b55aa05042a800970ebd18961, type: 3}
+    volume: 1
   fadeDuration: 0.5
 --- !u!82 &499071695
 AudioSource:
@@ -1597,6 +1600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1246386153}
   - component: {fileID: 1246386154}
+  - component: {fileID: 1246386155}
   m_Layer: 0
   m_Name: StatusManager
   m_TagString: Untagged
@@ -1639,6 +1643,18 @@ MonoBehaviour:
   maxProtein: 100
   totalItemCount: 0
   pepperCount: 0
+--- !u!114 &1246386155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246386151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d1eae94890f564983c0637cbd1689a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1315681592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,6 +2355,7 @@ MonoBehaviour:
   - LivingScene
   - Zukan
   - WakeUpScene
+  - OperationScene
 --- !u!1 &1822236023
 GameObject:
   m_ObjectHideFlags: 0
