@@ -176,7 +176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7352339073622421304, guid: 0ed099265e402404298f3d071df95f14, type: 3}
+  m_Sprite: {fileID: 5536783604357385098, guid: 545d9daf5f8e8214080c2aeab1437c48, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -817,7 +817,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 01178b882e8e5ae49bb60570ab69ddef, type: 3}
     volume: 1
   - sceneName: MouseScene
-    clip: {fileID: 8300000, guid: 58a62c9ff0850a640aa8aa947fa72663, type: 3}
+    clip: {fileID: 8300000, guid: 983533d1d3efd6e439c7969503f425e7, type: 3}
     volume: 1
   - sceneName: LivingScene
     clip: {fileID: 8300000, guid: 4d60af2b55aa05042a800970ebd18961, type: 3}
@@ -825,8 +825,17 @@ MonoBehaviour:
   - sceneName: WakeUpScene
     clip: {fileID: 8300000, guid: 4d60af2b55aa05042a800970ebd18961, type: 3}
     volume: 1
-  - sceneName: syokudouScene
-    clip: {fileID: 8300000, guid: 4d60af2b55aa05042a800970ebd18961, type: 3}
+  - sceneName: syokudou scene
+    clip: {fileID: 8300000, guid: c5073f42d57e7af4ab251e7b1bc4fe57, type: 3}
+    volume: 1
+  - sceneName: IScene
+    clip: {fileID: 8300000, guid: 8584db422196135478b4a9d07fb4a5fb, type: 3}
+    volume: 1
+  - sceneName: Koumon
+    clip: {fileID: 8300000, guid: 6a94098aae414304bb92df0d617a98d2, type: 3}
+    volume: 1
+  - sceneName: ClearScene
+    clip: {fileID: 8300000, guid: a4a4abfab7c3b154585a5a2c96224c3b, type: 3}
     volume: 1
   fadeDuration: 0.5
 --- !u!82 &499071695
