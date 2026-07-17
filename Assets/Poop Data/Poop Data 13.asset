@@ -16,7 +16,7 @@ MonoBehaviour:
   poopName: "\u307F\u305A\u3046\u3093\u3061"
   icon: {fileID: 21300000, guid: f83f04e6eca1f894887d541ab45993b9, type: 3}
   rare: 1
-  katasa: "\u3075\u3064\u3046"
-  nioi: "\u3075\u3064\u3046"
-  sukkiri: 2
-  description: "\u8840\u4FBF"
+  katasa: "\u6DB2\u72B6"
+  nioi: "\u3046\u3059\u3044"
+  sukkiri: 1
+  description: "\u307B\u307C\u6C34\u3002\u3082\u306F\u3084\u98F2\u307F\u7269\u304B\u6392\u6CC4\u7269\u304B\u3001\u54F2\u5B66\u7684\u306A\u554F\u3044\u3092\u6295\u3052\u304B\u3051\u3066\u304F\u308B\u4E00\u672C\u3002"

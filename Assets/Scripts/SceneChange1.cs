@@ -9,6 +9,13 @@ public class SceneChange1 : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
+        LevelManager.Instance.SaveCheckpoint();
+
+        if (nextSceneName == "ClearScene")
+        {
+            GameData.EarnedPoopId = NutritionJudge.Judge();
+        }
+
         SceneManager.LoadScene(nextSceneName);
     }
 }

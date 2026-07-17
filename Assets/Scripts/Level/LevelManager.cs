@@ -10,6 +10,11 @@ public class LevelManager : MonoBehaviour
     public float currentExp = 0;
     public float requiredExp = 100;
 
+    // チェックポイント保存用
+    private int savedLevel = 1;
+    private float savedExp = 0;
+    private float savedRequiredExp = 100;
+
     [Header("UI")]
     public TMP_Text levelText;
 
@@ -27,16 +32,6 @@ public class LevelManager : MonoBehaviour
 
     void Update()
     {
-        if (levelText == null)
-        {
-            GameObject obj = GameObject.Find("LevelText");
-
-            if (obj != null)
-            {
-                levelText = obj.GetComponent<TMP_Text>();
-            }
-        }
-
         if (levelText != null)
         {
             levelText.text = "Lv." + level;
@@ -55,7 +50,23 @@ public class LevelManager : MonoBehaviour
 
             requiredExp *= 1.2f;
 
-            Debug.Log("���x���A�b�v�I");
+            Debug.Log("レベルアップ！");
         }
+    }
+
+    // チェックポイント保存
+    public void SaveCheckpoint()
+    {
+        savedLevel = level;
+        savedExp = currentExp;
+        savedRequiredExp = requiredExp;
+    }
+
+    // チェックポイント復元
+    public void LoadCheckpoint()
+    {
+        level = savedLevel;
+        currentExp = savedExp;
+        requiredExp = savedRequiredExp;
     }
 }

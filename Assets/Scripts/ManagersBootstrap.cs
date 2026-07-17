@@ -14,6 +14,7 @@ public static class ManagersBootstrap
         SpawnIfMissing("CollectedItemsManager");
         SpawnIfMissing("BGMManager");
         SpawnIfMissing("CanvasGroup"); // ゲージのPrefab名に合わせて変更してください
+        SpawnIfMissing("LevelManager"); 
     }
 
     static void SpawnIfMissing(string prefabName)

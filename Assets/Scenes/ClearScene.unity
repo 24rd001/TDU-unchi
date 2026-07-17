@@ -188,7 +188,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3053\u3093\u304C\u308A\u3046\u3093\u3061"
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
   m_sharedMaterial: {fileID: -4772264822377865769, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
@@ -675,7 +677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3059\u3063\u304D\u308A \u2605\u2605\u2605\u2606"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
   m_sharedMaterial: {fileID: -4772264822377865769, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
@@ -1898,7 +1900,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 92568ffc66dfc6f429007206d63942e3, type: 2}
   - {fileID: 11400000, guid: d12be15efcb7a37439991fe123e8250c, type: 2}
   - {fileID: 11400000, guid: f70ff0ac4b092ac44a5882839ad12e7f, type: 2}
-  testPoopId: poop0
+  testPoopId: 
   fallPoop: {fileID: 557740137}
   fallPoopImg: {fileID: 557740138}
   banner: {fileID: 848556993}
@@ -1994,7 +1996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30EC\u30A2\u30C9 \u2605\u2605\u2605\u2606\u2606"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
   m_sharedMaterial: {fileID: -4772264822377865769, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
@@ -2209,7 +2211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u304B\u305F\u3055 \u3075\u3064\u3046"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
   m_sharedMaterial: {fileID: -4772264822377865769, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
@@ -2587,7 +2589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u306B\u304A\u3044 \u3084\u3084\u304F\u3055\u3044"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
   m_sharedMaterial: {fileID: -4772264822377865769, guid: 1543ef245ef505e40936e54561f8dd29, type: 2}
