@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 
     public bool switchA = false;
     public float daityouRotation = -90f;
+    public bool firstEnterDaityou = true;
     void Awake()
     {
         if (Instance == null)

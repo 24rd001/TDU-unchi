@@ -107,12 +107,15 @@ public class Boss : MonoBehaviour
         // 🔥 basePosじゃなく startPos基準にする
         Vector3 basePos = transform.position;
 
+
         points = new Vector3[]
         {
-            basePos, // 左
-            basePos + new Vector3(triangleDistance, triangleHeight, 0),   // 右上
-            basePos + new Vector3(triangleDistance, -triangleHeight, 0)   // 右下
+            basePos,
+            basePos + new Vector3(triangleDistance, triangleHeight, 0),
+            basePos + new Vector3(triangleDistance, -triangleHeight, 0),
+            basePos
         };
+
     }
 
     // -------------------------
