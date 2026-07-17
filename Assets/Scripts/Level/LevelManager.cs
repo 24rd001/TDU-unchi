@@ -10,7 +10,8 @@ public class LevelManager : MonoBehaviour
     public float currentExp = 0;
     public float requiredExp = 100;
 
-    // ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg•Û‘¶—p
+   
+    // ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆä¿å­˜ç”¨
     private int savedLevel = 1;
     private float savedExp = 0;
     private float savedRequiredExp = 100;
@@ -50,11 +51,11 @@ public class LevelManager : MonoBehaviour
 
             requiredExp *= 1.2f;
 
-            Debug.Log("ƒŒƒxƒ‹ƒAƒbƒvI");
+            Debug.Log("ãƒ¬ãƒ™ãƒ«ã‚¢ãƒƒãƒ—ï¼");
         }
     }
 
-    // ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg•Û‘¶
+    // ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆä¿å­˜
     public void SaveCheckpoint()
     {
         savedLevel = level;
@@ -62,7 +63,7 @@ public class LevelManager : MonoBehaviour
         savedRequiredExp = requiredExp;
     }
 
-    // ƒ`ƒFƒbƒNƒ|ƒCƒ“ƒg•œŒ³
+    // ãƒã‚§ãƒƒã‚¯ãƒã‚¤ãƒ³ãƒˆå¾©å…ƒ
     public void LoadCheckpoint()
     {
         level = savedLevel;

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fdcf28f94008d4e972cc5c9655de53, type: 3}
   m_Name: Poop Data 12
   m_EditorClassIdentifier: 
-  id: coloful
+  id: colorful
   poopName: "\u30AB\u30E9\u30D5\u30EB\u3046\u3093\u3061"
   icon: {fileID: 21300000, guid: 18ac64562479c264d947fd8ad38d4aa2, type: 3}
-  rare: 1
+  rare: 4
   katasa: "\u3075\u3064\u3046"
-  nioi: "\u3075\u3064\u3046"
+  nioi: "\u8907\u96D1"
   sukkiri: 2
-  description: "\u8840\u4FBF"
+  description: "5\u7A2E\u985E\u4EE5\u4E0A\u306E\u98DF\u6750\u304C\u6DF7\u3056\u308A\u5408\u3044\u3001\u8679\u8272\u306B\u3002\u30D5\u30EB\u30B3\u30FC\u30B9\u3092\u4E00\u5EA6\u306B\u697D\u3057\u3093\u3060\u6B32\u5F35\u308A\u30BB\u30C3\u30C8\u3002"

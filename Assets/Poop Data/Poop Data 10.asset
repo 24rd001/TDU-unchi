@@ -15,8 +15,8 @@ MonoBehaviour:
   id: kiniro
   poopName: "\u304D\u3093\u3044\u308D\u3046\u3093\u3061"
   icon: {fileID: 21300000, guid: daf9964d6bb8774499cbf482a7840177, type: 3}
-  rare: 1
+  rare: 5
   katasa: "\u3075\u3064\u3046"
-  nioi: "\u3075\u3064\u3046"
-  sukkiri: 2
-  description: "\u8840\u4FBF"
+  nioi: "\u82B3\u9999"
+  sukkiri: 3
+  description: "10\u7A2E\u985E\u4EE5\u4E0A\u306E\u98DF\u6750\u3092\u5236\u8987\u3057\u305F\u8A3C\u3002\u3082\u306F\u3084\u304A\u5B9D\u3001\u91D1\u8272\u306B\u8F1D\u304F\u4F1D\u8AAC\u7D1A\u306E\u4E00\u672C\u3002"

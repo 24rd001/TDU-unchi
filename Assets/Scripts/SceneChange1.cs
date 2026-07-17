@@ -8,7 +8,14 @@ public class SceneChange1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
+
         LevelManager.Instance.SaveCheckpoint();
+
+        if (nextSceneName == "ClearScene")
+        {
+            GameData.EarnedPoopId = NutritionJudge.Judge();
+        }
+
         SceneManager.LoadScene(nextSceneName);
     }
 }

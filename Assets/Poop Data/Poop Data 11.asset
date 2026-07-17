@@ -15,8 +15,8 @@ MonoBehaviour:
   id: makkuro
   poopName: "\u307E\u3063\u304F\u308D\u3046\u3093\u3061"
   icon: {fileID: 7325599739529618512, guid: 7938701f6553cbd4a85bd6e90c6548ec, type: 3}
-  rare: 1
-  katasa: "\u3075\u3064\u3046"
-  nioi: "\u3075\u3064\u3046"
-  sukkiri: 2
-  description: "\u8840\u4FBF"
+  rare: 3
+  katasa: "\u304B\u305F\u3044"
+  nioi: "\u3064\u3088\u3044"
+  sukkiri: 1
+  description: "\u30BF\u30F3\u30D1\u30AF\u8CEA\u3060\u3051\u3067\u751F\u304D\u305F\u7D50\u679C\u3002\u8272\u7D20\u3068\u4E00\u7DD2\u306B\u4EBA\u751F\u306E\u9078\u629E\u3082\u5C11\u3057\u53CD\u7701\u3055\u305B\u3089\u308C\u308B\u3002"

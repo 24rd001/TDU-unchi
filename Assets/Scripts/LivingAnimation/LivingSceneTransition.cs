@@ -11,7 +11,7 @@ public class LivingSceneTransition : MonoBehaviour
     void Start()
     {
         if (lieDownAnimation == null)
-            lieDownAnimation = FindObjectOfType<LieDownAnimation>();
+            lieDownAnimation = FindFirstObjectByType<LieDownAnimation>();
 
         lieDownAnimation.OnComplete += HandleAnimationComplete;
     }

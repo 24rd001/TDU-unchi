@@ -31,6 +31,9 @@ public class ClearSequence : MonoBehaviour
     void Start()
     {
         id    = string.IsNullOrEmpty(GameData.EarnedPoopId) ? testPoopId : GameData.EarnedPoopId;
+        
+        Debug.Log($"[ClearSequence] 判定されたid: '{id}'");
+        
         isNew = !ZukanProgress.IsUnlocked(id);
 
         poopRest  = fallPoop.anchoredPosition;

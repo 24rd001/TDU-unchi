@@ -15,8 +15,8 @@ MonoBehaviour:
   id: hirihiri
   poopName: "\u3072\u308A\u3072\u308A\u3046\u3093\u3061"
   icon: {fileID: 21300000, guid: cdc3fed0507ed0d45badea5249b2a88b, type: 3}
-  rare: 1
+  rare: 3
   katasa: "\u3075\u3064\u3046"
-  nioi: "\u3075\u3064\u3046"
+  nioi: "\u30C4\u30F3\u3068\u304F\u308B"
   sukkiri: 2
-  description: "\u8840\u4FBF"
+  description: "\u3068\u3046\u304C\u3089\u3057\u306E\u6442\u308A\u3059\u304E\u3067\u3001\u51FA\u53E3\u304C\u3061\u3087\u3063\u3068\u3057\u305F\u706B\u5C71\u53E3\u306B\u3002\u8F9B\u515A\u3078\u306E\u8B66\u544A\u30E1\u30C3\u30BB\u30FC\u30B8\u3002"
