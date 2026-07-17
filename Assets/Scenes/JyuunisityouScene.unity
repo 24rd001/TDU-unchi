@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 353208285}
   m_Layer: 3
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 809987210}
   m_Layer: 3
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1031,6 +1031,7 @@ MonoBehaviour:
   specialMoveInterval: 5
   blockWall: {fileID: 1357452130}
   EHP: 30
+  expReward: 250
 --- !u!114 &1387385962
 MonoBehaviour:
   m_ObjectHideFlags: 0

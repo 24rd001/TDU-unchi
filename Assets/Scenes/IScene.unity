@@ -301,9 +301,9 @@ GameObject:
   - component: {fileID: 41108143}
   - component: {fileID: 41108142}
   - component: {fileID: 41108144}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1343,9 +1343,9 @@ GameObject:
   - component: {fileID: 719424900}
   - component: {fileID: 719424899}
   - component: {fileID: 719424901}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (10)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1754,9 +1754,9 @@ GameObject:
   - component: {fileID: 991083882}
   - component: {fileID: 991083881}
   - component: {fileID: 991083883}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (6)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2000,9 +2000,9 @@ GameObject:
   - component: {fileID: 1085071196}
   - component: {fileID: 1085071195}
   - component: {fileID: 1085071197}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2295,9 +2295,9 @@ GameObject:
   - component: {fileID: 1285865575}
   - component: {fileID: 1285865574}
   - component: {fileID: 1285865576}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (7)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3155,9 +3155,9 @@ GameObject:
   - component: {fileID: 1530701199}
   - component: {fileID: 1530701198}
   - component: {fileID: 1530701200}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3226,8 +3226,8 @@ Transform:
   m_GameObject: {fileID: 1530701196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.6188647, w: 0.78549767}
-  m_LocalPosition: {x: -0.84000003, y: 22.77, z: 0}
-  m_LocalScale: {x: 11.835253, y: 0.14357582, z: 1}
+  m_LocalPosition: {x: -1.3745, y: 19.9235, z: 0}
+  m_LocalScale: {x: 6.0383463, y: 0.28369147, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1520569165}
@@ -3280,9 +3280,9 @@ GameObject:
   - component: {fileID: 1533540358}
   - component: {fileID: 1533540357}
   - component: {fileID: 1533540359}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3702,6 +3702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 10
+  expReward: 50
 --- !u!1 &1657577290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4297,9 +4298,9 @@ GameObject:
   - component: {fileID: 1974455913}
   - component: {fileID: 1974455915}
   - component: {fileID: 1974455914}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (14)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4422,9 +4423,9 @@ GameObject:
   - component: {fileID: 1978390486}
   - component: {fileID: 1978390485}
   - component: {fileID: 1978390487}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4697,9 +4698,9 @@ GameObject:
   - component: {fileID: 2098702066}
   - component: {fileID: 2098702065}
   - component: {fileID: 2098702067}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5647,11 +5648,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 605442592685048028, guid: e5b265301998ec447949c997a22d3bba, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 605442592685048028, guid: e5b265301998ec447949c997a22d3bba, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.9
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 605442592685048028, guid: e5b265301998ec447949c997a22d3bba, type: 3}
       propertyPath: m_LocalPosition.z

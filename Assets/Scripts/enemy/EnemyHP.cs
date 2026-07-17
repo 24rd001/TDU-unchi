@@ -4,6 +4,9 @@ public class EnemyHP : MonoBehaviour
 {
     public int maxHP = 3;
 
+    [Header("Exp")]
+    public float expReward = 10f;
+
     private int currentHP;
 
     void Start()
@@ -23,10 +26,9 @@ public class EnemyHP : MonoBehaviour
 
     void Die()
     {
-        // åoå±ílïtó^
         if (LevelManager.Instance != null)
         {
-            LevelManager.Instance.AddExp(10);
+            LevelManager.Instance.AddExp(expReward);
         }
 
         Destroy(gameObject);

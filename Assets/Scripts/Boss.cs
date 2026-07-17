@@ -32,6 +32,11 @@ public class Boss : MonoBehaviour
     [Header("HP (EHP)")]
     public int EHP = 30;
 
+
+    [Header("Exp")]
+    public float expReward = 100f;
+
+
     private bool enraged = false;
 
     void Start()
@@ -141,6 +146,10 @@ public class Boss : MonoBehaviour
 
     void Die()
     {
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.AddExp(expReward);
+        }
         if (blockWall != null)
         {
             Destroy(blockWall);
