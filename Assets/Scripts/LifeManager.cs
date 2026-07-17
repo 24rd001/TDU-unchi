@@ -48,7 +48,8 @@ public class LifeManager : MonoBehaviour
     {
         isDead = true;
 
-        PlayerDeath playerDeath = FindFirstObjectByType<PlayerDeath>();
+        PlayerDeath playerDeath =
+            FindFirstObjectByType<PlayerDeath>();
 
         if (playerDeath != null)
         {
@@ -59,6 +60,11 @@ public class LifeManager : MonoBehaviour
 
         currentLife = initiallife;
         isDead = false;
+
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.LoadCheckpoint();
+        }
 
         SceneManager.LoadScene(respawnSceneName);
     }
