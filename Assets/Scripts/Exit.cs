@@ -27,24 +27,19 @@ public class Exit : MonoBehaviour
 
     IEnumerator ExitSequence(GameObject player)
     {
-        // プレイヤーのコンポーネント取得
         PlayerController2D controller = player.GetComponent<PlayerController2D>();
         PlayerAttack attack = player.GetComponent<PlayerAttack>();
         Rigidbody2D rb = player.GetComponent<Rigidbody2D>();
 
-        // プレイヤーの操作停止
         if (controller != null)
             controller.enabled = false;
 
-        // 攻撃停止
         if (attack != null)
             attack.enabled = false;
 
-        // 速度を止める
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
 
-        // 出口まで歩かせる
         while (Vector2.Distance(player.transform.position, transform.position) > 0.05f)
         {
             player.transform.position = Vector2.MoveTowards(
@@ -56,10 +51,11 @@ public class Exit : MonoBehaviour
             yield return null;
         }
 
-        // 少し待つ
         yield return new WaitForSeconds(waitTime);
 
-        // シーン切り替え
+        // ここを追加：うんちの種類を判定してからシーン切り替え
+        GameData.EarnedPoopId = NutritionJudge.Judge();
+
         SceneManager.LoadScene(nextSceneName);
     }
 }
