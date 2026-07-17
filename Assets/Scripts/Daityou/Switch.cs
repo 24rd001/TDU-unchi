@@ -26,6 +26,7 @@ public class Switch : MonoBehaviour
 
             GameManager.Instance.switchA = true;
             GameManager.Instance.daityouRotation = 0f;
+            GameManager.Instance.justRotatedDaityou = true;
 
             stageRoot.rotation =
                 Quaternion.Euler(0f, 0f, GameManager.Instance.daityouRotation);

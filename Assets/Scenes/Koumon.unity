@@ -463,7 +463,7 @@ Transform:
   m_GameObject: {fileID: 257775147}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.39, y: -3.39, z: 0}
+  m_LocalPosition: {x: -7.6, y: -2.9, z: 0}
   m_LocalScale: {x: 2.9276416, y: 3.3111331, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1174,6 +1174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchA: 0
   daityouRotation: -90
+  firstEnterDaityou: 1
 --- !u!4 &1576368104
 Transform:
   m_ObjectHideFlags: 0

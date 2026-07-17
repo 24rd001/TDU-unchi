@@ -3,12 +3,19 @@ using UnityEngine;
 
 public class DaityouStageController : MonoBehaviour
 {
-    [Header("Spawn Point")]
+    [Header("Spawn Points")]
+
+    // ‡@‰‰ñ
     public Transform firstSpawnPoint;
 
-    [Header("Respawn Point")]
-    public Transform respawnPointNormal;
-    public Transform respawnPointRotated;
+    // ‡A‰ñ“]‘O‚Å–ß‚Á‚Ä‚«‚½
+    public Transform respawnBeforeRotate;
+
+    // ‡B‰ñ“]ƒCƒxƒ“ƒg’¼Œã
+    public Transform respawnAfterRotate;
+
+    // ‡C‰ñ“]Œã‚Å–ß‚Á‚Ä‚«‚½
+    public Transform respawnAfterRotateReturn;
 
     IEnumerator Start()
     {
@@ -27,7 +34,7 @@ public class DaityouStageController : MonoBehaviour
         if (player == null)
             yield break;
 
-        // ‰‰ñ‚Ì‚İ
+        // ‡@ ‰‰ñ“üê
         if (GameManager.Instance.firstEnterDaityou)
         {
             player.transform.position =
@@ -37,27 +44,31 @@ public class DaityouStageController : MonoBehaviour
 
             Debug.Log("‰‰ñƒXƒ|[ƒ“");
         }
+        // ‡B ‰ñ“]ƒCƒxƒ“ƒg’¼Œã
+        else if (GameManager.Instance.justRotatedDaityou)
+        {
+            player.transform.position =
+                respawnAfterRotate.position;
+
+            GameManager.Instance.justRotatedDaityou = false;
+
+            Debug.Log("‰ñ“]’¼ŒãƒXƒ|[ƒ“");
+        }
+        // ‡C ‰ñ“]Œã‚É–ß‚Á‚Ä‚«‚½
+        else if (GameManager.Instance.daityouRotation == 0f)
+        {
+            player.transform.position =
+                respawnAfterRotateReturn.position;
+
+            Debug.Log("‰ñ“]ŒãƒŠƒXƒ|[ƒ“");
+        }
+        // ‡A ‰ñ“]‘O‚É–ß‚Á‚Ä‚«‚½
         else
         {
-            if (GameManager.Instance.daityouRotation == -90f)
-            {
-                player.transform.position =
-                    respawnPointNormal.position;
+            player.transform.position =
+                respawnBeforeRotate.position;
 
-                Debug.Log("Normal‚ÖˆÚ“®");
-            }
-            else
-            {
-                player.transform.position =
-                    respawnPointRotated.position;
-
-                Debug.Log("Rotated‚ÖˆÚ“®");
-            }
+            Debug.Log("‰ñ“]‘OƒŠƒXƒ|[ƒ“");
         }
-
-        Debug.Log(
-            "PlayerÀ•W : " +
-            player.transform.position
-        );
     }
 }
