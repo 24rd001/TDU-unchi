@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class DaityouStageController : MonoBehaviour
 {
+    [Header("Spawn Point")]
+    public Transform firstSpawnPoint;
+
+    [Header("Respawn Point")]
     public Transform respawnPointNormal;
     public Transform respawnPointRotated;
 
@@ -20,7 +24,20 @@ public class DaityouStageController : MonoBehaviour
         GameObject player =
             GameObject.FindGameObjectWithTag("Player");
 
-        if (player != null)
+        if (player == null)
+            yield break;
+
+        // 初回のみ
+        if (GameManager.Instance.firstEnterDaityou)
+        {
+            player.transform.position =
+                firstSpawnPoint.position;
+
+            GameManager.Instance.firstEnterDaityou = false;
+
+            Debug.Log("初回スポーン");
+        }
+        else
         {
             if (GameManager.Instance.daityouRotation == -90f)
             {
@@ -36,9 +53,11 @@ public class DaityouStageController : MonoBehaviour
 
                 Debug.Log("Rotatedへ移動");
             }
-
-            Debug.Log("Player座標:" +
-                      player.transform.position);
         }
+
+        Debug.Log(
+            "Player座標 : " +
+            player.transform.position
+        );
     }
 }
