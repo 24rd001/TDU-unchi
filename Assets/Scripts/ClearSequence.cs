@@ -97,7 +97,20 @@ public class ClearSequence : MonoBehaviour
         GameData.CameFromClear = true;
         SceneManager.LoadScene("Zukan");
     }
-    public void OnTitle() => SceneManager.LoadScene("TitleScene");
+    public void OnTitle()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ResetGameData();
+        }
+
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.ResetLevel();
+        }
+
+        SceneManager.LoadScene("TitleScene");
+    }
 
     string Stars(int n,int max)=>new string('★',Mathf.Clamp(n,0,max))+new string('☆',Mathf.Max(0,max-n));
     void SetA(Image i,float a){var c=i.color;c.a=a;i.color=c;}

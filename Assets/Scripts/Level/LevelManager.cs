@@ -70,4 +70,15 @@ public class LevelManager : MonoBehaviour
         currentExp = savedExp;
         requiredExp = savedRequiredExp;
     }
+
+    public void ResetLevel()
+    {
+        level = 1;
+        currentExp = 0;
+        requiredExp = 100;
+
+        savedLevel = 1;
+        savedExp = 0;
+        savedRequiredExp = 100;
+    }
 }

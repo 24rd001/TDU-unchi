@@ -77,5 +77,18 @@ public class Zukan : MonoBehaviour
 
     string Stars(int n, int max) => new string('★', n) + new string('☆', max - n);
 
-    public void Back() => SceneManager.LoadScene("TitleScene");
+    public void Back()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.ResetGameData();
+        }
+
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.ResetLevel();
+        }
+
+        SceneManager.LoadScene("TitleScene");
+    }
 }
