@@ -131,9 +131,9 @@ GameObject:
   - component: {fileID: 411408923}
   - component: {fileID: 411408922}
   - component: {fileID: 411408924}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Open Sprite Shape
-  m_TagString: WallKick
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1271,9 +1271,9 @@ GameObject:
   - component: {fileID: 1313418498}
   - component: {fileID: 1313418497}
   - component: {fileID: 1313418499}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Open Sprite Shape (1)
-  m_TagString: WallKick
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
