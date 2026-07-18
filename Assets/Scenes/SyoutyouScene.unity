@@ -19975,7 +19975,7 @@ MonoBehaviour:
   clock15: {fileID: -6024649199404482131, guid: 83c5adcc9559c954c93f513a3a7e6145, type: 3}
   clock30: {fileID: 2560999208675538549, guid: 0db69fc54ad8dfb4ca329a16d5070860, type: 3}
   clock45: {fileID: -5086427380952568559, guid: 9754b95fdff0f574195fad5cccc5fa07, type: 3}
-  limitTime: 40
+  limitTime: 200
 --- !u!4 &1690540687
 Transform:
   m_ObjectHideFlags: 0

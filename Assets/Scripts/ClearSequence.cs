@@ -4,6 +4,13 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class ItemIcon
+{
+    public string itemName;   // NutritionItemのitemNameと完全一致させる（例: "キャベツ"）
+    public Sprite icon;
+}
+
 public class ClearSequence : MonoBehaviour
 {
     [Header("データ")]
@@ -25,15 +32,16 @@ public class ClearSequence : MonoBehaviour
     public Image    cardIcon;
     public TMP_Text nameText, rareText, katasaText, nioiText, sukkiriText;
 
+    [Header("食べたアイテムの表示")]
+    public ItemIcon[] itemIcons;      // 全アイテム分のアイコン対応表
+    public Image[] nutrientSlots;     // 点線の枠（7マス分をInspectorで登録）
+
     string id; bool isNew;
     Vector2 poopRest, cardShown;
 
     void Start()
     {
         id    = string.IsNullOrEmpty(GameData.EarnedPoopId) ? testPoopId : GameData.EarnedPoopId;
-        
-        Debug.Log($"[ClearSequence] 判定されたid: '{id}'");
-        
         isNew = !ZukanProgress.IsUnlocked(id);
 
         poopRest  = fallPoop.anchoredPosition;
@@ -70,6 +78,7 @@ public class ClearSequence : MonoBehaviour
         if (splashText) splashText.SetActive(false);
 
         ZukanProgress.Unlock(id);
+        ZukanProgress.SaveIngredients(id, StatusManager.Instance.takenItemNames);
 
         if (data)
         {   
@@ -81,6 +90,8 @@ public class ClearSequence : MonoBehaviour
             if (sukkiriText) sukkiriText.text= "すっきり　" + Stars(data.sukkiri, 3);
         }
 
+        ShowTakenItems();
+
         Shake();
         StartCoroutine(Fade(cardGroup, 1f, 0.2f));
         yield return Move(card, card.anchoredPosition, cardShown, 0.3f, false);
@@ -89,6 +100,47 @@ public class ClearSequence : MonoBehaviour
 
         yield return new WaitForSeconds(0.3f);
         if (buttons) buttons.SetActive(true);
+    }
+
+    void ShowTakenItems()
+    {
+        if (nutrientSlots == null || StatusManager.Instance == null) return;
+
+        var taken = StatusManager.Instance.takenItemNames; // HashSet<string>
+        Debug.Log($"[ShowTakenItems] 取ったアイテム数: {taken.Count}");
+        foreach (var n in taken) Debug.Log($"  取ったアイテム名: '{n}'");
+
+        int i = 0;
+
+        foreach (string name in taken)
+        {
+            if (i >= nutrientSlots.Length) break;
+
+            Sprite icon = FindIcon(name);
+            Debug.Log($"  '{name}' のアイコン検索結果: {(icon != null ? "見つかった" : "見つからない")}");
+
+            if (icon != null)
+            {
+                nutrientSlots[i].sprite = icon;
+                nutrientSlots[i].gameObject.SetActive(true);
+            }
+            i++;
+        }
+
+        // 使わなかったマスは非表示にする
+        for (; i < nutrientSlots.Length; i++)
+        {
+            nutrientSlots[i].gameObject.SetActive(false);
+        }
+    }
+
+    Sprite FindIcon(string itemName)
+    {
+        foreach (var entry in itemIcons)
+        {
+            if (entry.itemName == itemName) return entry.icon;
+        }
+        return null;
     }
 
     public void OnZukan()
