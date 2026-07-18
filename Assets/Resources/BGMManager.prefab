@@ -165,7 +165,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 01178b882e8e5ae49bb60570ab69ddef, type: 3}
     volume: 1
   - sceneName: MouseScene
-    clip: {fileID: 8300000, guid: 983533d1d3efd6e439c7969503f425e7, type: 3}
+    clip: {fileID: 8300000, guid: 58a62c9ff0850a640aa8aa947fa72663, type: 3}
     volume: 1
   - sceneName: LivingScene
     clip: {fileID: 8300000, guid: 4d60af2b55aa05042a800970ebd18961, type: 3}

@@ -27,4 +27,10 @@ public class CollectedItemsManager : MonoBehaviour
     {
         collectedIds.Add(id);
     }
+
+    // 新しく最初からプレイを始める時に呼ぶ
+    public void ResetAll()
+    {
+        collectedIds.Clear();
+    }
 }

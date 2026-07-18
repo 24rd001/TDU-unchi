@@ -3,24 +3,31 @@ using UnityEngine.SceneManagement;
 
 public class TitleMenu : MonoBehaviour
 {
-    [SerializeField] RectTransform highlight;   // 動く金枠
-    [SerializeField] RectTransform[] buttons;   // ゲームスタート/オプション/うんち図鑑
+    [SerializeField] RectTransform highlight;
+    [SerializeField] RectTransform[] buttons;
 
     void Start() { if (highlight) highlight.gameObject.SetActive(false); }
 
-    public void Hover(int i)        // マウスを乗せたボタンへ金枠を移動
+    public void Hover(int i)
     {
         if (!highlight) return;
         highlight.gameObject.SetActive(true);
         highlight.position = buttons[i].position;
     }
-    public void Unhover()           // どのボタンからも離れたら消す
+    public void Unhover()
     {
         if (highlight) highlight.gameObject.SetActive(false);
     }
 
-    public void StartGame()   => SceneManager.LoadScene("CharacterSelect");
+    public void StartGame()
+    {
+        if (CollectedItemsManager.Instance != null)
+            CollectedItemsManager.Instance.ResetAll();
+
+        SceneManager.LoadScene("CharacterSelect");
+    }
+
     public void OpenOptions() => SceneManager.LoadScene("OperationScene");
     public void OpenZukan() => SceneManager.LoadScene("Zukan");
-    public void QuitGame()    => Application.Quit();
+    public void QuitGame() => Application.Quit();
 }
