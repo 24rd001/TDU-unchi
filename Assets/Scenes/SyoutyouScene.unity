@@ -19604,6 +19604,7 @@ MonoBehaviour:
   clock30: {fileID: 2560999208675538549, guid: 0db69fc54ad8dfb4ca329a16d5070860, type: 3}
   clock45: {fileID: -5086427380952568559, guid: 9754b95fdff0f574195fad5cccc5fa07, type: 3}
   limitTime: 60
+  limitTime: 200
 --- !u!4 &1690540687
 Transform:
   m_ObjectHideFlags: 0

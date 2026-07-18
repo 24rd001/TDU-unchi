@@ -29,7 +29,7 @@ public static class NutritionJudge
         if (P >= 90 && F <= 10 && W <= 10) return "makkuro";
         if (W >= 90 && F <= 10 && P <= 10) return "mizu";
         if (W <= 20) return "korokoro";
-        if (W >= 90) return "bichabica";
+        if (W >= 90) return "bichabicha";
 
         return "kongari";  // フォールバック
     }

@@ -9,7 +9,6 @@ public class Switch : MonoBehaviour
 
     void Start()
     {
-        // すでにスイッチ済みなら、このスイッチは無効化する（WakeUpSceneから戻ってきた場合など）
         if (GameManager.Instance.switchA)
         {
             Destroy(gameObject);
@@ -26,7 +25,7 @@ public class Switch : MonoBehaviour
 
             GameManager.Instance.switchA = true;
             GameManager.Instance.daityouRotation = 0f;
-            GameManager.Instance.justRotatedDaityou = true;
+            GameManager.Instance.justRotatedDaityou = true;   // ← 追加
 
             stageRoot.rotation =
                 Quaternion.Euler(0f, 0f, GameManager.Instance.daityouRotation);
