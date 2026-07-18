@@ -3833,6 +3833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 10
   expReward: 50
+  playerDamageOnDeath: 0
 --- !u!1001 &1605091295
 PrefabInstance:
   m_ObjectHideFlags: 0

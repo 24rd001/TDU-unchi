@@ -26455,6 +26455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 3
   expReward: 15
+  playerDamageOnDeath: 0
 --- !u!60 &7771241503938275331
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26538,6 +26539,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 3
   expReward: 15
+  playerDamageOnDeath: 0
 --- !u!212 &7804402360493888223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26705,9 +26707,7 @@ SceneRoots:
   - {fileID: 926397280}
   - {fileID: 928772292}
   - {fileID: 406742197}
-  - {fileID: 132706219}
   - {fileID: 413338102}
   - {fileID: 401020347}
   - {fileID: 2031934129}
   - {fileID: 1079763432}
-  - {fileID: 140572004}

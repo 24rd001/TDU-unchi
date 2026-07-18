@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     // スイッチで回転させた直後のリスポーン制御用
     public bool justRotatedDaityou = false;
 
+    public bool returnedToDaityou = false;
+
     void Awake()
     {
         if (Instance == null)

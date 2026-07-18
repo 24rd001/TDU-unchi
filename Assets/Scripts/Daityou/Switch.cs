@@ -9,6 +9,7 @@ public class Switch : MonoBehaviour
 
     void Start()
     {
+
         if (GameManager.Instance.switchA)
         {
             Destroy(gameObject);
