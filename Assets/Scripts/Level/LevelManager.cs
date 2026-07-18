@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public float currentExp = 0;
     public float requiredExp = 100;
 
+    // チェックポイント保存用
     private int savedLevel = 1;
     private float savedExp = 0;
     private float savedRequiredExp = 100;
@@ -50,6 +51,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    // チェックポイント保存
     public void SaveCheckpoint()
     {
         savedLevel = level;
@@ -57,6 +59,7 @@ public class LevelManager : MonoBehaviour
         savedRequiredExp = requiredExp;
     }
 
+    // チェックポイント復元
     public void LoadCheckpoint()
     {
         level = savedLevel;
@@ -64,7 +67,7 @@ public class LevelManager : MonoBehaviour
         requiredExp = savedRequiredExp;
     }
 
-      // タイトルに戻る時にレベルを完全リセットする
+    // タイトルに戻る時にレベルを完全リセットする
     public void ResetLevel()
     {
         level = 1;
@@ -74,5 +77,4 @@ public class LevelManager : MonoBehaviour
         savedExp = 0;
         savedRequiredExp = 100;
     }
-}
 }

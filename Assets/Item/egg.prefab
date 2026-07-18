@@ -150,6 +150,6 @@ MonoBehaviour:
   itemName: "\u5375"
   waterAmount: 0
   nutritionAmount: 0
-  proteinAmount: 40
+  proteinAmount: 8
   isPepper: 0
   expValue: 10

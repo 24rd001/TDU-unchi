@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: "\u6C34\u306E\u3057\u305A\u304F"
-  waterAmount: 60
+  waterAmount: 25
   nutritionAmount: 0
   proteinAmount: 0
   isPepper: 0

@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: "\u308F\u304B\u3081"
-  waterAmount: 40
-  nutritionAmount: 60
+  waterAmount: 15
+  nutritionAmount: 15
   proteinAmount: 0
   isPepper: 0
   expValue: 10

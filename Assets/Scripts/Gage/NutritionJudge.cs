@@ -21,15 +21,16 @@ public static class NutritionJudge
         // ==== 通常条件（0~100スケール） ====
         if (F >= 70 && W >= 70 && P >= 30 && P <= 60) return "risou";
         if (F >= 50 && F < 70 && W >= 50 && W < 70 && P >= 30 && P <= 60) return "kongari";
+        if (P >= 90 && F <= 10 && W <= 10) return "makkuro";      // ← ここに移動
         if (P >= 70 && F <= 30 && W <= 30) return "kusai";
         if (F + W + P <= 30) return "chibi";
         if (F >= 90 && W >= 30 && W <= 60) return "nagai";
         if (F >= 70 && W <= 20) return "mokomoko";
         if (W >= 70 && P >= 60) return "nurunuru";
-        if (P >= 90 && F <= 10 && W <= 10) return "makkuro";
         if (W >= 90 && F <= 10 && P <= 10) return "mizu";
         if (W <= 20) return "korokoro";
         if (W >= 90) return "bichabicha";
+        return "kongari";
 
         return "kongari";  // フォールバック
     }

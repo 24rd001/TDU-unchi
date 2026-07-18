@@ -1255,6 +1255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 644908973355289142, guid: ca1697f1521019e45bbc97eb99f5d64b, type: 3}
+      propertyPath: sceneBGMs.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 58a62c9ff0850a640aa8aa947fa72663, type: 3}
     - target: {fileID: 2555187339478611482, guid: ca1697f1521019e45bbc97eb99f5d64b, type: 3}
       propertyPath: m_Name
       value: BGMManager

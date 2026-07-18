@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 847307282654116079}
   - component: {fileID: 1305405550697527455}
   - component: {fileID: 258366701421614072}
-  - component: {fileID: 1963379072561406949}
+  - component: {fileID: -8205245927293035694}
   m_Layer: 0
   m_Name: banana
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.49, y: 3.92}
   m_EdgeRadius: 0
---- !u!114 &1963379072561406949
+--- !u!114 &-8205245927293035694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: "\u30D0\u30CA\u30CA"
-  waterAmount: 20
-  nutritionAmount: 40
-  proteinAmount: 20
+  waterAmount: 0
+  nutritionAmount: 10
+  proteinAmount: 0
   isPepper: 0
   expValue: 10
