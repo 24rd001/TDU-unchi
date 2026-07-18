@@ -7,14 +7,21 @@ public class Switch : MonoBehaviour
 
     public Transform stageRoot;
 
-    void Start()
+void Start()
+{
+    // スイッチを押していたら消す
+    if (GameManager.Instance.switchA)
     {
-
-        if (GameManager.Instance.switchA)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
+        return;
     }
+
+    // 看板に触れていなければスイッチは表示しない
+    if (!GameManager.Instance.showSwitch)
+    {
+        Destroy(gameObject);
+    }
+}
 
     void OnTriggerEnter2D(Collider2D other)
     {
