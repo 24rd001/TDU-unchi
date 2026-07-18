@@ -153,3 +153,4 @@ MonoBehaviour:
   proteinAmount: 15
   isPepper: 0
   expValue: 10
+  pickupSound: {fileID: 8300000, guid: c427896f420062c46bb8b91e5dcbb5be, type: 3}

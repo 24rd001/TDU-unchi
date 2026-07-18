@@ -6,6 +6,9 @@ public class PlayerDeath : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerVisual playerVisual;
 
+    [Header("効果音")]
+    public AudioClip deathSound;   // ← 追加
+
     private bool isDead = false;
 
     void Awake()
@@ -34,5 +37,8 @@ public class PlayerDeath : MonoBehaviour
         {
             playerVisual.PlayDeath();
         }
+
+        if (deathSound != null)
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);   // ← 追加
     }
 }

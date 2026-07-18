@@ -15,7 +15,7 @@ public static class NutritionJudge
         // ==== 特殊条件（優先） ====
         if (pepperCount >= 3) return "hirihiri";
         if (speciesTaken >= 10) return "kiniro";
-        if (speciesTaken >= 5)  return "colorful";
+        if (speciesTaken >= 9)  return "colorful";
         if (totalItems == 1)    return "ghost";
 
         // ==== 通常条件（0~100スケール） ====

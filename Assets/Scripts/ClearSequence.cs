@@ -84,7 +84,7 @@ public class ClearSequence : MonoBehaviour
         {   
             if (cardIcon && data.icon) cardIcon.sprite = data.icon;
             if (nameText)    nameText.text   = data.poopName;
-            if (rareText)    rareText.text   = "レアド　"   + Stars(data.rare, 5);
+            if (rareText)    rareText.text   = "レア度　"   + Stars(data.rare, 5);
             if (katasaText)  katasaText.text = "かたさ　"   + data.katasa;
             if (nioiText)    nioiText.text   = "におい　"   + data.nioi;
             if (sukkiriText) sukkiriText.text= "すっきり　" + Stars(data.sukkiri, 3);
