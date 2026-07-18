@@ -3,24 +3,26 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private Vector2 direction;
-    public float speed;
 
-    private Vector2 startPosition;
+    [Header("Move")]
+    public float speed = 15f;
 
+    [Header("Range")]
     public float maxDistance = 3f;
 
     [Header("Damage")]
     public int damage = 5;
+
+    private Vector2 startPosition;
 
     void Start()
     {
         startPosition = transform.position;
     }
 
-    public void Initialize(Vector2 dir, float spd)
+    public void Initialize(Vector2 dir)
     {
         direction = dir;
-        speed = spd;
 
         Vector3 scale = transform.localScale;
 
@@ -40,7 +42,11 @@ public class Projectile : MonoBehaviour
     {
         transform.Translate(direction * speed * Time.deltaTime);
 
-        float distance = Vector2.Distance(startPosition, transform.position);
+        float distance =
+            Vector2.Distance(
+                startPosition,
+                transform.position
+            );
 
         if (distance >= maxDistance)
         {
@@ -50,7 +56,8 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        BossHP bossHP = other.GetComponent<BossHP>();
+        BossHP bossHP =
+            other.GetComponent<BossHP>();
 
         if (bossHP != null)
         {
@@ -59,7 +66,8 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        EnemyHP enemyHP = other.GetComponent<EnemyHP>();
+        EnemyHP enemyHP =
+            other.GetComponent<EnemyHP>();
 
         if (enemyHP != null)
         {
@@ -67,5 +75,4 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

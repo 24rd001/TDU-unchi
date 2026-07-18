@@ -5,7 +5,6 @@ public class PlayerAttack : MonoBehaviour
     [Header("Projectile")]
     public GameObject[] projectilePrefabs;
 
-    public float projectileSpeed = 15f;
     public float spawnOffset = 1f;
 
     private PlayerController2D playerController;
@@ -15,7 +14,8 @@ public class PlayerAttack : MonoBehaviour
 
     void Start()
     {
-        playerController = GetComponent<PlayerController2D>();
+        playerController =
+            GetComponent<PlayerController2D>();
     }
 
     void Update()
@@ -34,7 +34,8 @@ public class PlayerAttack : MonoBehaviour
     {
         int sel = GameData.SelectedCharacter;
 
-        if (sel < 0 || sel >= projectilePrefabs.Length)
+        if (sel < 0 ||
+            sel >= projectilePrefabs.Length)
             return;
 
         GameObject projectilePrefab =
@@ -60,10 +61,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (projectile != null)
         {
-            projectile.Initialize(
-                direction,
-                projectileSpeed
-            );
+            projectile.Initialize(direction);
         }
     }
 }

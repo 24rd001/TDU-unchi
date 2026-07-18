@@ -24,12 +24,21 @@ public class EnemyHP : MonoBehaviour
         }
     }
 
+    public int playerDamageOnDeath = 1;
+
     void Die()
     {
         if (LevelManager.Instance != null)
         {
             LevelManager.Instance.AddExp(expReward);
         }
+
+
+        if (LifeManager.Instance != null)
+        {
+            LifeManager.Instance.Damage(playerDamageOnDeath);
+        }
+
 
         Destroy(gameObject);
     }

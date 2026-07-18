@@ -3,18 +3,12 @@ using UnityEngine;
 
 public class DaityouStageController : MonoBehaviour
 {
-    [Header("Spawn Points")]
-
-    // ①初回
     public Transform firstSpawnPoint;
 
-    // ②回転前で戻ってきた
     public Transform respawnBeforeRotate;
 
-    // ③回転イベント直後
     public Transform respawnAfterRotate;
 
-    // ④回転後で戻ってきた
     public Transform respawnAfterRotateReturn;
 
     IEnumerator Start()
@@ -34,7 +28,7 @@ public class DaityouStageController : MonoBehaviour
         if (player == null)
             yield break;
 
-        // ① 初回入場
+        // 初回
         if (GameManager.Instance.firstEnterDaityou)
         {
             player.transform.position =
@@ -44,7 +38,7 @@ public class DaityouStageController : MonoBehaviour
 
             Debug.Log("初回スポーン");
         }
-        // ③ 回転イベント直後
+        // 回転イベント直後
         else if (GameManager.Instance.justRotatedDaityou)
         {
             player.transform.position =
@@ -54,21 +48,47 @@ public class DaityouStageController : MonoBehaviour
 
             Debug.Log("回転直後スポーン");
         }
-        // ④ 回転後に戻ってきた
-        else if (GameManager.Instance.daityouRotation == 0f)
+        // 回転後で別シーンから戻る
+        else if (
+            GameManager.Instance.daityouRotation == 0f &&
+            GameManager.Instance.returnedToDaityou
+        )
         {
             player.transform.position =
                 respawnAfterRotateReturn.position;
 
-            Debug.Log("回転後リスポーン");
+            GameManager.Instance.returnedToDaityou = false;
+
+            Debug.Log("回転後戻りスポーン");
         }
-        // ② 回転前に戻ってきた
-        else
+        // 回転前で別シーンから戻る
+        else if (
+            GameManager.Instance.daityouRotation != 0f &&
+            GameManager.Instance.returnedToDaityou
+        )
         {
             player.transform.position =
                 respawnBeforeRotate.position;
 
-            Debug.Log("回転前リスポーン");
+            GameManager.Instance.returnedToDaityou = false;
+
+            Debug.Log("回転前戻りスポーン");
+        }
+        // 回転後死亡
+        else if (GameManager.Instance.daityouRotation == 0f)
+        {
+            player.transform.position =
+                respawnAfterRotate.position;
+
+            Debug.Log("回転後死亡リスポーン");
+        }
+        // 回転前死亡
+        else
+        {
+            player.transform.position =
+                firstSpawnPoint.position;
+
+            Debug.Log("回転前死亡リスポーン");
         }
     }
 }
