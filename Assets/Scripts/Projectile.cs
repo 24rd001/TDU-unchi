@@ -3,7 +3,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     private Vector2 direction;
-    private float speed;
+    public float speed;
 
     private Vector2 startPosition;
 
