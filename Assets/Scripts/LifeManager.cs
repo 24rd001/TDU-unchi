@@ -58,6 +58,8 @@ public class LifeManager : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);
 
+        GameManager.Instance.returnedToDaityou = false;
+
         currentLife = initiallife;
         isDead = false;
 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kanban_0: 4438747078856832778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

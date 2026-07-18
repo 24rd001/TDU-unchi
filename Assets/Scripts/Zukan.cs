@@ -139,6 +139,13 @@ public class Zukan : MonoBehaviour
             LevelManager.Instance.ResetLevel();
         }
 
+
+        if (LifeManager.Instance != null)
+        {
+            LifeManager.Instance.ResetLife();
+        }
+
+
         SceneManager.LoadScene("TitleScene");
     }
 }
