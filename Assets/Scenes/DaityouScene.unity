@@ -1553,6 +1553,7 @@ MonoBehaviour:
   firstEnterDaityou: 1
   justRotatedDaityou: 0
   returnedToDaityou: 0
+  showSwitch: 0
 --- !u!4 &520875329
 Transform:
   m_ObjectHideFlags: 0
@@ -3268,7 +3269,6 @@ Transform:
   - {fileID: 1012933195}
   - {fileID: 77698658}
   - {fileID: 1951070047}
-  - {fileID: 889292559}
   - {fileID: 1069147203}
   - {fileID: 837688461}
   - {fileID: 576174974}
@@ -3680,6 +3680,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2499143909901886016, guid: 1206453011aa1bd47ad16a8619ba9310, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499143909901886016, guid: 1206453011aa1bd47ad16a8619ba9310, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 3840
+      objectReference: {fileID: 0}
+    - target: {fileID: 2499143909901886016, guid: 1206453011aa1bd47ad16a8619ba9310, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 2160
+      objectReference: {fileID: 0}
     - target: {fileID: 5565174773241105564, guid: 1206453011aa1bd47ad16a8619ba9310, type: 3}
       propertyPath: m_Pivot.x
       value: 0
