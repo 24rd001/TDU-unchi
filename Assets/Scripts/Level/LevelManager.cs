@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -28,6 +29,33 @@ public class LevelManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // タイトルでは表示しない
+        if (scene.name == "TitleScene")
+        {
+            levelText = null;
+            return;
+        }
+
+        GameObject obj = GameObject.Find("LevelText");
+
+        if (obj != null)
+        {
+            levelText = obj.GetComponent<TMP_Text>();
+        }
     }
 
     void Update()
