@@ -109,18 +109,16 @@ public class Boss : MonoBehaviour
         state = State.Triangle;
         index = 0;
 
-        // 🔥 basePosじゃなく startPos基準にする
         Vector3 basePos = transform.position;
-
 
         points = new Vector3[]
         {
-            basePos,
-            basePos + new Vector3(triangleDistance, triangleHeight, 0),
-            basePos + new Vector3(triangleDistance, -triangleHeight, 0),
-            basePos
+        basePos,
+        basePos + new Vector3(triangleDistance, triangleHeight, 0), // 右上
+        basePos + new Vector3(triangleDistance, -triangleHeight, 0), // 右下
+        basePos + new Vector3(0, -triangleHeight, 0), // 真下
+        basePos // 開始地点
         };
-
     }
 
     // -------------------------

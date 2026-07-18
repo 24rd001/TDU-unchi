@@ -75,4 +75,3 @@ public class LevelManager : MonoBehaviour
         savedRequiredExp = 100;
     }
 }
-}

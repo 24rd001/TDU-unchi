@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.52, y: 1.64, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -101,7 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0748b02fb0d9fec48ba40d54993c50da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 3
+  speed: 8
+  maxDistance: 1.5
   damage: 5
 --- !u!58 &5922695669093673670
 CircleCollider2D:
