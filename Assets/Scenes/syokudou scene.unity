@@ -523,7 +523,7 @@ Transform:
   m_GameObject: {fileID: 275995774}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.592518, y: -60.547928, z: -0.42384052}
+  m_LocalPosition: {x: -0.18499, y: -1499.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1020,7 +1020,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2513,7 +2513,7 @@ Transform:
   m_GameObject: {fileID: 1233536434}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -53.9938, y: -3018.4648, z: 0.42384052}
+  m_LocalPosition: {x: -0.184, y: -10, z: 0.42384052}
   m_LocalScale: {x: 49.05451, y: 21.151886, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1089315065}
   detectDistance: 8
-  moveDistance: 12
+  moveDistance: 6
   speed: 40
 --- !u!60 &1481543949
 PolygonCollider2D:
