@@ -6,14 +6,17 @@ public class LifeManager : MonoBehaviour
 {
     public static LifeManager Instance;
 
+    [Header("Life")]
     public int maxLife = 3;
     public int currentLife = 1;
 
-    
+    [SerializeField]
+    private int initiallife = 1;
+
+    [Header("Respawn")]
     public string respawnSceneName;
     public float respawnDelay = 2f;
 
-    private int initiallife = 1;
     private bool isDead = false;
 
     void Awake()
@@ -26,7 +29,10 @@ public class LifeManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        currentLife = initiallife;
     }
+
     public void SetRespawnScene(string sceneName)
     {
         respawnSceneName = sceneName;
@@ -34,16 +40,17 @@ public class LifeManager : MonoBehaviour
 
     public void Damage(int amount)
     {
-        if(isDead) return;
+        if (isDead) return;
+
         currentLife -= amount;
 
         if (currentLife <= 0)
         {
             currentLife = 0;
             StartCoroutine(DeathAndRespawn());
-            
         }
     }
+
     IEnumerator DeathAndRespawn()
     {
         isDead = true;
@@ -58,7 +65,10 @@ public class LifeManager : MonoBehaviour
 
         yield return new WaitForSeconds(respawnDelay);
 
-        GameManager.Instance.returnedToDaityou = false;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.returnedToDaityou = false;
+        }
 
         currentLife = initiallife;
         isDead = false;
@@ -84,10 +94,6 @@ public class LifeManager : MonoBehaviour
     public void ResetLife()
     {
         currentLife = initiallife;
-        isDead=false;
+        isDead = false;
     }
-
-    
-
-    
 }
