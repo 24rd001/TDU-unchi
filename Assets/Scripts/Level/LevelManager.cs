@@ -74,7 +74,7 @@ public class LevelManager : MonoBehaviour
         {
             currentExp -= requiredExp;
             level++;
-            requiredExp *= 1.2f;
+            requiredExp *= 1.5f;
             Debug.Log("レベルアップ！");
         }
     }

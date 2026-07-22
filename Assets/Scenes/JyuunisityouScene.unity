@@ -1031,7 +1031,7 @@ MonoBehaviour:
   specialMoveInterval: 5
   blockWall: {fileID: 1357452130}
   EHP: 30
-  expReward: 250
+  expReward: 150
 --- !u!114 &1387385962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,6 +1353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnSceneName: JyuunisityouScene
+  respawnLife: 3
 --- !u!4 &1542122487
 Transform:
   m_ObjectHideFlags: 0

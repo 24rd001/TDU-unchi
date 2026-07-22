@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -7,10 +8,13 @@ public class PlayerAttack : MonoBehaviour
 
     public float spawnOffset = 1f;
 
+    public float attackCooldown = 3f;
+
     private PlayerController2D playerController;
+
     private float lastAttackTime = -999f;
 
-    public float attackCooldown = 3f;
+    private bool isAttacking = false;
 
     void Start()
     {
@@ -22,46 +26,72 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
+            if (isAttacking)
+                return;
+
             if (Time.time - lastAttackTime < attackCooldown)
                 return;
 
-            Attack();
+            StartCoroutine(AttackRoutine());
+
             lastAttackTime = Time.time;
         }
     }
 
-    void Attack()
+    IEnumerator AttackRoutine()
     {
-        int sel = GameData.SelectedCharacter;
+        isAttacking = true;
 
-        if (sel < 0 ||
-            sel >= projectilePrefabs.Length)
-            return;
+        PlayerVisual visual =
+            GetComponent<PlayerVisual>();
 
-        GameObject projectilePrefab =
-            projectilePrefabs[sel];
+        float attackTime = 0.3f;
 
-        Vector2 direction =
-            playerController.facingRight
-            ? Vector2.right
-            : Vector2.left;
+        if (visual != null)
+        {
+            visual.PlayAttack();
 
-        Vector2 spawnPos =
-            (Vector2)transform.position +
-            direction * spawnOffset;
+            attackTime =
+                visual.GetAttackDuration();
+        }
 
-        GameObject obj = Instantiate(
-            projectilePrefab,
-            spawnPos,
-            Quaternion.identity
+        // çUåÇÉÇÅ[ÉVÉáÉìèIóπë“Çø
+        yield return new WaitForSeconds(
+            attackTime
         );
 
-        Projectile projectile =
-            obj.GetComponent<Projectile>();
+        int sel = GameData.SelectedCharacter;
 
-        if (projectile != null)
+        if (sel >= 0 &&
+            sel < projectilePrefabs.Length)
         {
-            projectile.Initialize(direction);
+            GameObject projectilePrefab =
+                projectilePrefabs[sel];
+
+            Vector2 direction =
+                playerController.facingRight
+                ? Vector2.right
+                : Vector2.left;
+
+            Vector2 spawnPos =
+                (Vector2)transform.position +
+                direction * spawnOffset;
+
+            GameObject obj = Instantiate(
+                projectilePrefab,
+                spawnPos,
+                Quaternion.identity
+            );
+
+            Projectile projectile =
+                obj.GetComponent<Projectile>();
+
+            if (projectile != null)
+            {
+                projectile.Initialize(direction);
+            }
         }
+
+        isAttacking = false;
     }
 }

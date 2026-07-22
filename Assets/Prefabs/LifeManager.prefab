@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6a5ddcdaada46847a1581c5cdd0397b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLife: 3
+  maxLife: 5
   currentLife: 1
+  initiallife: 1
   respawnSceneName: MouseScene
   respawnDelay: 1

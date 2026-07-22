@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealTooth : MonoBehaviour
 {
-    public int healAmount = 1;
+    public int healAmount = 2;
     private bool hasHealed = false;
 
     public void TryHeal(Collider2D other)
